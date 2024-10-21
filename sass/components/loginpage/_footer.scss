@@ -1,0 +1,18 @@
+#footer {
+  .newcreate {
+    text-align: center;
+    .createnewacc {
+      padding: 10px;
+      color: $brand;
+      font-weight: 500;
+      border: 1px solid $brand;
+      width: 80%;
+      text-align: center;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+  }
+}

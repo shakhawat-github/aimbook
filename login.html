@@ -11,12 +11,21 @@
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="icon" href="svg/logo.svg">
+    <link rel="icon" href="svg/logo.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      #loginpage {
+        padding: 0 0 50px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
   </head>
 
-  <body>
+  <body id="loginpage">
     <!-- header start -->
     <header>
       <div class="container">
@@ -34,13 +43,13 @@
       <section id="login">
         <div class="container">
           <div class="loginbox">
-            <div class="logo"><img src="svg/logo.svg" alt="logo"></div>
+            <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
             <form action="#">
               <div class="form-group">
                 <input type="text" name="name" required="required" />
                 <label for="name">Name</label>
               </div>
-              
+
               <div class="form-group">
                 <input type="password" name="password" required="required" />
                 <label for="password">Password</label>
@@ -48,13 +57,16 @@
             </form>
             <a href="#" class="forgot">Forgot password?</a>
           </div>
-          <div class="newcreate">
-            <a href="#" class="createnewacc">Create new account</a>
-          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="container">
+        <div class="newcreate">
+          <a href="#" class="createnewacc">Create new account</a>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="js/popper.min.js"></script>
