@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  font-family: inherit;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+header {
+  padding: 10px 0;
+}
+header .headbox {
+  text-align: center;
+}
+header .headbox select {
+  text-transform: capitalize;
+  border: 0;
+  background-color: transparent;
+  padding: 5px 15px;
+}
+
+#welcome .logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+#welcome .logo img {
+  width: 100px;
+}
+#welcome .welcometxt {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#welcome .welcometxt h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+#welcome .welcometxt a {
+  width: 80%;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 0;
+  text-align: center;
+}
+#welcome .welcometxt #login {
+  background-color: #0064E0;
+  color: #fff;
+  margin-top: 15px;
+}
+#welcome .welcometxt #create {
+  margin-top: 50px;
+  background-color: rgba(143, 186, 238, 0.3);
+  color: #0064E0;
+}
+
+#login .loginbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#login .loginbox .logo {
+  padding: 150px 0;
+}
+#login .loginbox .logo img {
+  width: 100px;
+}
+#login .loginbox form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#login .loginbox form .username,
+#login .loginbox form .pass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+#login .loginbox form .username input,
+#login .loginbox form .pass input {
+  padding: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  width: 80%;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+#login .loginbox form .username input ~ span,
+#login .loginbox form .pass input ~ span {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 11%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  padding: 0 5px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+}
+#login .loginbox form .username input:focus ~ span,
+#login .loginbox form .pass input:focus ~ span {
+  top: 2px;
+  left: 11%;
+  font-size: 14px;
+}
+#login .loginbox form button {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #0064E0;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+#login .loginbox .forgot {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #302d2d;
+}
+#login .newcreate {
+  display: flex;
+  justify-content: center;
+  margin-top: 25%;
+}
+#login .newcreate .createnewacc {
+  padding: 10px;
+  color: #0064E0;
+  font-weight: 500;
+  border: 1px solid #0064E0;
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}/*# sourceMappingURL=style.css.map */
