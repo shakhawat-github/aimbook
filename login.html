@@ -11,6 +11,7 @@
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="svg/logo.svg">
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -35,15 +36,15 @@
           <div class="loginbox">
             <div class="logo"><img src="svg/logo.svg" alt="logo"></div>
             <form action="#">
-              <div class="username">
-                <input type="text">
-                <span>Mobile number or email</span>
+              <div class="form-group">
+                <input type="text" name="name" required="required" />
+                <label for="name">Name</label>
               </div>
-              <div class="pass">
-                <input type="password">
-                <span>Password</span>
+              
+              <div class="form-group">
+                <input type="password" name="password" required="required" />
+                <label for="password">Password</label>
               </div>
-              <button type="button"> Log in</button>
             </form>
             <a href="#" class="forgot">Forgot password?</a>
           </div>

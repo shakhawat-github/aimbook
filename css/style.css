@@ -17,6 +17,11 @@ a {
   max-width: 1000px;
 }
 
+body {
+  position: relative;
+  height: 100vh;
+}
+
 header {
   padding: 10px 0;
 }
@@ -73,7 +78,7 @@ header .headbox select {
   align-items: center;
 }
 #login .loginbox .logo {
-  padding: 150px 0;
+  padding: 120px 0;
 }
 #login .loginbox .logo img {
   width: 100px;
@@ -84,64 +89,39 @@ header .headbox select {
   flex-direction: column;
   row-gap: 20px;
 }
-#login .loginbox form .username,
-#login .loginbox form .pass {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-#login .loginbox form .username input,
-#login .loginbox form .pass input {
-  padding: 10px;
-  border: 3px solid rgba(0, 0, 0, 0.3);
-  width: 80%;
-  border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-}
-#login .loginbox form .username input ~ span,
-#login .loginbox form .pass input ~ span {
-  background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 11%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-  padding: 0 5px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.5);
-  font-size: 18px;
-}
-#login .loginbox form .username input:focus ~ span,
-#login .loginbox form .pass input:focus ~ span {
-  top: 2px;
-  left: 11%;
-  font-size: 14px;
-}
-#login .loginbox form button {
+#login .loginbox form .form-group {
   width: 80%;
   margin: 0 auto;
-  background-color: #0064E0;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
+  position: relative;
+}
+#login .loginbox form .form-group input:focus ~ label,
+#login .loginbox form .form-group input:valid ~ label {
+  top: -10px;
+  font-size: 10pt;
+}
+#login .loginbox form .form-group label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999;
+  font-size: 14pt;
+  font-weight: normal;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  padding: 0 10px;
+}
+#login .loginbox form .form-group input {
+  border: 3px solid gray;
   padding: 10px;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  width: 100%;
+}
+#login .loginbox form .form-group input {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 #login .loginbox .forgot {
   margin-top: 20px;
@@ -150,16 +130,24 @@ header .headbox select {
   color: #302d2d;
 }
 #login .newcreate {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
   display: flex;
   justify-content: center;
-  margin-top: 25%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 #login .newcreate .createnewacc {
   padding: 10px;
   color: #0064E0;
   font-weight: 500;
   border: 1px solid #0064E0;
-  width: 80%;
+  width: 50%;
   text-align: center;
   border-radius: 30px;
   -webkit-border-radius: 30px;
