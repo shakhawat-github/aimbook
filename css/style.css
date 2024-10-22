@@ -43,19 +43,16 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.theme-switch {
+.theme-switch-wrapper .theme-switch {
   display: inline-block;
   height: 34px;
   position: relative;
   width: 60px;
 }
-
-.theme-switch input {
+.theme-switch-wrapper .theme-switch input {
   display: none;
 }
-
-.slider {
+.theme-switch-wrapper .theme-switch .slider {
   background-color: #0064e0;
   bottom: 0;
   cursor: pointer;
@@ -64,10 +61,10 @@ body {
   right: 0;
   top: 0;
   transition: 0.4s;
+  border-radius: 34px;
 }
-
-.slider:before {
-  background-color: pink;
+.theme-switch-wrapper .theme-switch .slider::before {
+  background-color: #021222;
   bottom: 4px;
   content: "";
   height: 26px;
@@ -76,17 +73,14 @@ body {
   transition: 0.4s;
   width: 26px;
 }
-
-input:checked + .slider {
+.theme-switch-wrapper .theme-switch .themecheckcolor::before {
+  background-color: #f1f1f1;
+}
+.theme-switch-wrapper .theme-switch input:checked + .slider {
   background-color: #0064e0;
 }
-
-input:checked + .slider:before {
+.theme-switch-wrapper .theme-switch input:checked + .slider:before {
   transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
 }
 
 .slider.round:before {
@@ -145,10 +139,34 @@ header .headbox select {
   background-color: #0064e0;
   color: #fff;
   margin-top: 15px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 #welcome .welcometxt #create {
   margin-top: 50px;
   background-color: rgba(143, 186, 238, 0.3);
+  color: #0064e0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+#footer .copyright {
+  display: flex;
+}
+#footer .copyright h6 {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--deepwhite);
+}
+#footer .copyright h6 i {
   color: #0064e0;
 }
 
@@ -229,6 +247,7 @@ header .headbox select {
 
 #footer .newcreate {
   text-align: center;
+  padding-bottom: 30px;
 }
 #footer .newcreate .createnewacc {
   padding: 10px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <title>TANBOOK</title>
     <!-- Required meta tags -->
@@ -9,11 +9,24 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <!-- font awesome -->
+     <link rel="stylesheet" href="css/all.min.css">
     <!-- Bootstrap CSS v5.2.1 -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="icon" href="svg/logo.svg">
+    <link rel="icon" href="svg/logo.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+      }
+      #footer{
+        padding-bottom: 30px;
+      }
+    </style>
   </head>
 
   <body>
@@ -29,7 +42,7 @@
           <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
               <input type="checkbox" id="checkbox" class="themecheckbox" />
-              <div class="slider round"></div>
+              <div class="slider round " id="themecheck"></div>
             </label>
           </div>
         </div>
@@ -39,17 +52,26 @@
     <main>
       <section id="welcome">
         <div class="container">
-            <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
-            <div class="welcometxt">
-                <h2>Welcome to Tanbook</h2>
-                <p>You can log in or create new account.</p>
-                <a href="login.html" type="button" id="login">Log in</a>
-                <a href="create.html" type="button" id="create">Create new account</a>
-            </div>
+          <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
+          <div class="welcometxt">
+            <h2>Welcome to Tanbook</h2>
+            <p>You can log in or create new account.</p>
+            <a href="login.html" type="button" id="login">Log in</a>
+            <a href="create.html" type="button" id="create"
+              >Create new account</a
+            >
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <div class="copyright">
+        <h6>
+          <i class="fa-regular fa-copyright"></i> 2024
+          <a href="#">Tanbook</a> . All right reserved
+        </h6>
+      </div>
+    </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="js/popper.min.js"></script>

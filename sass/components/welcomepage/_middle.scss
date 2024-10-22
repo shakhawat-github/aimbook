@@ -32,11 +32,21 @@
       background-color: $brand;
       color: #fff;
       margin-top: 15px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
     }
     #create {
       margin-top: 50px;
       background-color: rgba(143, 186, 238, 0.3);
       color: $brand;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -ms-border-radius: 7px;
+      -o-border-radius: 7px;
     }
   }
 }

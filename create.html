@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <title>TANBOOK</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="svg/logo.svg" />
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+      #loginpage {
+        padding: 0 0 50px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body id="loginpage">
+    <!-- header start -->
+    <header>
+      <div class="container">
+        <div class="headbox">
+          <select name="language" id="language">
+            <option value="english" selected="selected">english (US)</option>
+            <option value="bangla">bangla</option>
+            <option value="arabic">arabic</option>
+          </select>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" class="themecheckbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <main>
+      <section id="login">
+        <div class="container">
+          <div class="loginbox">
+            <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
+            <form action="#">
+              <div class="form-group">
+                <input type="text" name="name" required="required" />
+                <label for="name">Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="password" name="password" required="required" />
+                <label for="password">Password</label>
+              </div>
+              <button type="submit">Log in</button>
+            </form>
+            <a href="#" class="forgot">Forgot password?</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="newcreate">
+          <a href="create.html" class="createnewacc">Create new account</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- script -->
+     <script src="js/script.js"></script>
+  </body>
+</html>
