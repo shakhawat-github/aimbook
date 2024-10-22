@@ -1,12 +1,16 @@
 header{
     padding: 10px 0;
     .headbox{
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        column-gap: 60%;
+        padding: 0 50px;
         select{
             text-transform: capitalize;
             border: 0;
             background-color: transparent;
             padding: 5px 15px;
+            color: var(--deepwhite);
         }
     }
 }

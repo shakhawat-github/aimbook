@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <title>TANBOOK</title>
     <!-- Required meta tags -->
@@ -14,6 +14,7 @@
     <link rel="icon" href="svg/logo.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
     <style>
       #loginpage {
         padding: 0 0 50px;
@@ -25,7 +26,7 @@
     </style>
   </head>
 
-  <body id="loginpage">
+  <body id="loginpage" class="light" data-theme="light">
     <!-- header start -->
     <header>
       <div class="container">
@@ -35,6 +36,12 @@
             <option value="bangla">bangla</option>
             <option value="arabic">arabic</option>
           </select>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" class="themecheckbox" />
+              <div class="slider round"></div>
+            </label>
+          </div>
         </div>
       </div>
     </header>
@@ -54,6 +61,7 @@
                 <input type="password" name="password" required="required" />
                 <label for="password">Password</label>
               </div>
+              <button type="submit">Log in</button>
             </form>
             <a href="#" class="forgot">Forgot password?</a>
           </div>
@@ -71,5 +79,7 @@
     <!-- Bootstrap JavaScript Libraries -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- script -->
+     <script src="js/script.js"></script>
   </body>
 </html>

@@ -19,19 +19,96 @@ a {
 
 body {
   position: relative;
+  background-color: var(--bodybg);
+}
+
+:root {
+  --brand: #0064e0;
+  --bodybg: #f1f1f1;
+  --deepdark: #fff;
+  --deepwhite: #000;
+  --gray: #999999;
+  --purewhite: #000000;
+}
+
+.dark[data-theme=theme] {
+  --purewhite: #ffffff;
+  --deepwhite: #999999;
+  --bodybg: #021222;
+  --deepdark: #000;
+}
+
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #0064e0;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: pink;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #0064e0;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 header {
   padding: 10px 0;
 }
 header .headbox {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 60%;
+       column-gap: 60%;
+  padding: 0 50px;
 }
 header .headbox select {
   text-transform: capitalize;
   border: 0;
   background-color: transparent;
   padding: 5px 15px;
+  color: var(--deepwhite);
 }
 
 #welcome .logo {
@@ -52,6 +129,10 @@ header .headbox select {
 #welcome .welcometxt h2 {
   font-size: 22px;
   font-weight: 600;
+  color: var(--purewhite);
+}
+#welcome .welcometxt p {
+  color: var(--deepwhite);
 }
 #welcome .welcometxt a {
   width: 80%;
@@ -61,14 +142,14 @@ header .headbox select {
   text-align: center;
 }
 #welcome .welcometxt #login {
-  background-color: #0064E0;
+  background-color: #0064e0;
   color: #fff;
   margin-top: 15px;
 }
 #welcome .welcometxt #create {
   margin-top: 50px;
   background-color: rgba(143, 186, 238, 0.3);
-  color: #0064E0;
+  color: #0064e0;
 }
 
 #login .loginbox {
@@ -102,18 +183,21 @@ header .headbox select {
   position: absolute;
   top: 10px;
   left: 2%;
-  color: #999;
+  color: #999999;
   font-size: 14pt;
   font-weight: normal;
   pointer-events: none;
   transition: all 0.2s ease;
-  background-color: #fff;
   padding: 0 10px;
+  background-color: var(--deepdark);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 #login .loginbox form .form-group input {
-  border: 3px solid gray;
+  border: 3px solid #999999;
   padding: 10px;
   width: 100%;
+  background-color: var(--deepdark);
 }
 #login .loginbox form .form-group input {
   border-radius: 12px;
@@ -122,11 +206,25 @@ header .headbox select {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+#login .loginbox form button {
+  padding: 10px;
+  background-color: #0064e0;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 18px;
+}
 #login .loginbox .forgot {
   margin-top: 20px;
   font-size: 18px;
   font-weight: 500;
-  color: #302d2d;
+  color: var(--deepwhite);
 }
 
 #footer .newcreate {
@@ -134,9 +232,9 @@ header .headbox select {
 }
 #footer .newcreate .createnewacc {
   padding: 10px;
-  color: #0064E0;
+  color: #0064e0;
   font-weight: 500;
-  border: 1px solid #0064E0;
+  border: 1px solid #0064e0;
   width: 80%;
   text-align: center;
   border-radius: 30px;

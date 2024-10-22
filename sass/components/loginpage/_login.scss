@@ -26,13 +26,26 @@
           -o-border-radius: 12px;
         }
       }
+      button {
+        padding: 10px;
+        background-color: $brand;
+        color: #fff;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 18px;
+      }
     }
     .forgot {
       margin-top: 20px;
       font-size: 18px;
       font-weight: 500;
-      color: #302d2d;
+      color: var(--deepwhite);
     }
   }
-
 }

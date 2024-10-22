@@ -1,0 +1,8 @@
+/* extra small device start */
+@media(max-width: 1199.98px) { 
+    #login .loginbox form .form-group input:focus ~ label, #login .loginbox form .form-group input:valid ~ label {
+        left: 5%;
+    }
+ }
+/* extra small device end */
+@media (min-width: 768px) and (max-width: 1199.98px) { }
