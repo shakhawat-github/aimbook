@@ -10,3 +10,18 @@ round.addEventListener("click", () => {
 });
 
 // common script end
+
+// password show/hide start
+const passfinder = document.querySelector(".passfinder");
+const password = document.querySelector(".password");
+passfinder.addEventListener("click", () => {
+  // password.type = 'text';
+  if ((password.type = "password" && password.type != "text")) {
+    password.type = "text";
+    passfinder.classList = "fa-regular fa-eye";
+  } else if ((password.type = "text" && password.type != "password")) {
+    password.type = "password";
+    passfinder.classList = "fa-regular fa-eye-slash";
+  }
+});
+// password show/hide end

@@ -18,12 +18,21 @@
         width: 80%;
         margin: 0 auto;
         @include typebox;
+        position: relative;
         input {
           border-radius: 12px;
           -webkit-border-radius: 12px;
           -moz-border-radius: 12px;
           -ms-border-radius: 12px;
           -o-border-radius: 12px;
+          color: var(--deepwhite);
+        }
+        i{
+          position: absolute;
+          top: 7px;
+          right: 10px;
+          padding: 10px;
+          color: var(--deepwhite);
         }
       }
       button {
@@ -46,6 +55,15 @@
       font-size: 18px;
       font-weight: 500;
       color: var(--deepwhite);
+    }
+    h2{
+      color: var(--deepwhite);
+      font-size: 22px;
+      font-weight: 600;
+    }
+    p{
+      color: var(--deepwhite);
+      opacity: .6;
     }
   }
 }

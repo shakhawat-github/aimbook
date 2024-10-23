@@ -1,0 +1,28 @@
+#regForm {
+  width: 80%;
+  margin: 0 auto;
+  .tab {
+    h2 {
+      font-size: 30px;
+      text-transform: capitalize;
+      color: var(--deepwhite);
+      font-weight: 700;
+    }
+    img {
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+    }
+  }
+  .joinimg {
+    margin-top: 50px;
+    p{
+        font-size: 18px;
+        color: var(--deepwhite);
+        width: 70%;
+        padding: 20px 0;
+    }
+  }
+}

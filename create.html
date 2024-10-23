@@ -14,16 +14,17 @@
     <link rel="icon" href="svg/logo.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" />
     <style>
       #loginpage {
-        padding: 0 0 50px;
+        padding: 0 0 30px;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-    </style>
+
+        </style>
   </head>
 
   <body id="loginpage">
@@ -39,7 +40,7 @@
           <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
               <input type="checkbox" id="checkbox" class="themecheckbox" />
-              <div class="slider round"></div>
+              <div class="slider round" id="themecheck"></div>
             </label>
           </div>
         </div>
@@ -47,31 +48,63 @@
     </header>
     <!-- header end -->
     <main>
-      <section id="login">
+      <!-- join start -->
+      <section id="join">
         <div class="container">
-          <div class="loginbox">
-            <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
-            <form action="#">
-              <div class="form-group">
-                <input type="text" name="name" required="required" />
-                <label for="name">Name</label>
-              </div>
+          <div class="mainjoinbox">
+            <div class="join">
 
-              <div class="form-group">
-                <input type="password" name="password" required="required" />
-                <label for="password">Password</label>
-              </div>
-              <button type="submit">Log in</button>
-            </form>
-            <a href="#" class="forgot">Forgot password?</a>
+                <form id="regForm" action="#">
+                    <!-- One "tab" for each step in the form: -->
+                    <div class="tab joinimg">
+                        <h2>join tanbook</h2>
+                        <img src="images/owner2.png" alt="owner">
+                       <p>Create an account to connect with friends , family and communities of people who share your intrrest.</p>
+                    </div>
+                    <div class="tab">Name:
+                      <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+                      <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                    </div>
+                    <div class="tab">Contact Info:
+                      <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
+                      <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
+                    </div>
+                    <div class="tab">Birthday:
+                      <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
+                      <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
+                      <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
+                    </div>
+                    <div class="tab">Login Info:
+                      <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+                      <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+                    </div>
+                    <div style="overflow:auto;">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                      </div>
+                    </div>
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div>
+                  </form>
+            </div>
           </div>
         </div>
       </section>
+      <!-- join end -->
     </main>
     <footer id="footer">
       <div class="container">
-        <div class="newcreate">
-          <a href="create.html" class="createnewacc">Create new account</a>
+        <div class="copyright">
+          <h6>
+            <i class="fa-regular fa-copyright"></i> 2024
+            <a href="create.html">Tanbook</a> . All right reserved
+          </h6>
         </div>
       </div>
     </footer>
@@ -80,6 +113,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- script -->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+
   </body>
 </html>
