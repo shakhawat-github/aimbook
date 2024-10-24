@@ -1,4 +1,6 @@
 // common script start
+
+// theme
 const round = document.querySelector(".round");
 round.addEventListener("click", () => {
   const html = document.querySelector("html");
@@ -15,7 +17,6 @@ round.addEventListener("click", () => {
 const passfinder = document.querySelector(".passfinder");
 const password = document.querySelector(".password");
 passfinder.addEventListener("click", () => {
-  // password.type = 'text';
   if ((password.type = "password" && password.type != "text")) {
     password.type = "text";
     passfinder.classList = "fa-regular fa-eye";
@@ -25,3 +26,4 @@ passfinder.addEventListener("click", () => {
   }
 });
 // password show/hide end
+

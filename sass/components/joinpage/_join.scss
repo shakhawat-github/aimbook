@@ -1,28 +1,59 @@
+#join {
+  .mainjoinbox {
+    .join {
+      width: 80%;
+      margin: 0 auto;
+
+      .tab {
+        h2 {
+          font-size: 30px;
+          text-transform: capitalize;
+          color: var(--deepwhite);
+          font-weight: 700;
+        }
+        .joinbtns {
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          a {
+            text-align: center;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            padding: 5px;
+            font-size: 18px;
+            font-weight: 500;
+          }
+          .getstart {
+            color: #fff;
+            background-color: $brand;
+          }
+          .alreadyhave {
+            color: var(--deepwhite);
+            border: 2px solid var(--gray);
+          }
+        }
+        img {
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+        }
+      }
+      .joinimg {
+        margin-top: 50px;
+        p {
+          font-size: 18px;
+          color: var(--deepwhite);
+          width: 70%;
+          padding: 20px 0;
+        }
+      }
+    }
+  }
+}
 #regForm {
-  width: 80%;
-  margin: 0 auto;
-  .tab {
-    h2 {
-      font-size: 30px;
-      text-transform: capitalize;
-      color: var(--deepwhite);
-      font-weight: 700;
-    }
-    img {
-      border-radius: 20px;
-      -webkit-border-radius: 20px;
-      -moz-border-radius: 20px;
-      -ms-border-radius: 20px;
-      -o-border-radius: 20px;
-    }
-  }
-  .joinimg {
-    margin-top: 50px;
-    p{
-        font-size: 18px;
-        color: var(--deepwhite);
-        width: 70%;
-        padding: 20px 0;
-    }
-  }
 }
