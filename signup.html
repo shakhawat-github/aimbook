@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <title>TANBOOK</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="icon" href="svg/logo.svg" />
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <style>
+      #loginpage {
+        padding: 0 0 30px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body id="loginpage">
+    <!-- header start -->
+    <header>
+      <div class="container">
+        <div class="headbox">
+          <select name="language" id="language">
+            <option value="english" selected="selected">english (US)</option>
+            <option value="bangla">bangla</option>
+            <option value="arabic">arabic</option>
+          </select>
+          <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" class="themecheckbox" />
+              <div class="slider round" id="themecheck"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <main>
+      <!-- signup start -->
+      <section id="signup">
+        <div class="container">
+          <div class="signupbox">
+            <form action="#">
+              <div class="form-group">
+                <input type="text" name="name" required="required" />
+                <label for="name">First Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" name="name" required="required" />
+                <label for="name">Last Name</label>
+              </div>
+              <div class="form-group">
+                <input type="date" name="name" required="required" />
+                <label for="name">Date of Birth</label>
+              </div>
+              <div class="form-group">
+                <input type="email" name="name" required="required" />
+                <label for="name">E-mail</label>
+              </div>
+              <div class="form-group">
+                <input type="text" name="name" required="required" />
+                <label for="name">Country</label>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="password" required="required" />
+                <label for="password">Password</label>
+                <i class="fa-regular fa-eye-slash passfinder"></i>
+              </div>
+              <div class="form-group">
+                <input type="password" name="password" class="password" required="required" />
+                <label for="password">Re-enter Password</label>
+                <i class="fa-regular fa-eye-slash passfinder"></i>
+              </div>
+              <div class="form-group">
+                <select name="gender" id="gender" required="required">
+                    <option value="#" selected="selected" disabled="disabled">Please select your gender</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="others">others</option>
+                </select>
+              </div>
+              <button type="submit">Sign up</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- signup end -->
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <div class="newcreate">
+          <a href="#" class="haveacc">I already have an account</a>
+        </div>
+        <div class="copyright">
+          <h6>
+            <i class="fa-regular fa-copyright"></i> 2024
+            <a href="create.html">Tanbook</a> . All right reserved
+          </h6>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

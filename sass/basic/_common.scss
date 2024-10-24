@@ -89,3 +89,8 @@ img {
 .slider.round:before {
   border-radius: 50%;
 }
+
+::-webkit-calendar-picker-indicator{
+  background-image: url('../../svg/calender.svg');
+}
+

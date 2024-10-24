@@ -92,6 +92,10 @@ img {
   border-radius: 50%;
 }
 
+::-webkit-calendar-picker-indicator {
+  background-image: url("../../svg/calender.svg");
+}
+
 header {
   padding: 10px 0;
 }
@@ -157,6 +161,12 @@ header .headbox select {
   padding: 10px;
   width: 100%;
   background-color: var(--deepdark);
+  color: var(--deepwhite);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 #login .loginbox form .form-group input {
   border-radius: 12px;
@@ -242,6 +252,7 @@ header .headbox select {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  padding-bottom: 20px;
 }
 #join .mainjoinbox .join .tab .joinbtns a {
   text-align: center;
@@ -277,4 +288,76 @@ header .headbox select {
   color: var(--deepwhite);
   width: 70%;
   padding: 20px 0;
+}
+
+#signup .signupbox form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+#signup .signupbox form .form-group {
+  position: relative;
+}
+#signup .signupbox form .form-group input:focus ~ label,
+#signup .signupbox form .form-group input:valid ~ label {
+  top: -10px;
+  font-size: 10pt;
+}
+#signup .signupbox form .form-group label {
+  position: absolute;
+  top: 10px;
+  left: 2%;
+  color: #999999;
+  font-size: 14pt;
+  font-weight: normal;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  padding: 0 10px;
+  background-color: var(--deepdark);
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#signup .signupbox form .form-group input {
+  border: 3px solid #999999;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--deepdark);
+  color: var(--deepwhite);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#signup .signupbox form .form-group i {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}
+#signup .signupbox form .form-group select {
+  background-color: var(--deepdark);
+  width: 100%;
+  padding: 10px;
+  border: 3px solid var(--gray);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: var(--deepwhite);
+  text-transform: capitalize;
+}
+#signup .signupbox form button {
+  color: #fff;
+  padding: 5px;
+  background-color: #0064e0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-weight: 600;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
