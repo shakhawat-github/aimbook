@@ -405,7 +405,9 @@ header .headbox select {
 #homedead .homeheadbox .contacts {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: end;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
   margin-left: 15px;
 }
 #homedead .homeheadbox .contacts button {

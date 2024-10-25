@@ -1,0 +1,56 @@
+@media (max-width: 575.98px) {
+  #homedead .homeheadbox {
+    grid-template-columns: 75% 25%;
+  }
+  #homedead .homeheadbox .logosearch {
+    grid-template-columns: 100px auto;
+  }
+  #homedead .homeheadbox .logosearch button {
+    padding: 10px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+  #homedead .homeheadbox .logosearch button i {
+    margin-right: 5px;
+  }
+  #homedead .homeheadbox .logosearch .homesearch-cut {
+    width: 38px;
+    height: fit-content;
+  }
+  #homedead .homeheadbox .logosearch form {
+      margin-left: auto;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #homedead .homeheadbox .logosearch form input {
+    padding: 0 5px;
+    font-size: 13px;
+  }
+  #homedead .homeheadbox .logosearch form button {
+    top: -10%;
+    right: 0px;
+    padding: 5px;
+  }
+  #homedead .homeheadbox .contacts button {
+    padding: 0;
+    background-color: transparent;
+    font-size: 24px;
+    width: 40px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  #homedead .homeheadbox .contacts {
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    margin-left: 10px;
+  }
+  #homedead .homeheadbox .logosearch .homesearch-extend {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+}
