@@ -13,12 +13,21 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-.container {
-  max-width: 1000px;
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+// .container {
+//   max-width: 1000px;
+// }
 body {
   position: relative;
   background-color: var(--bodybg);
+  overflow-x: hidden;
 }
 img {
   width: 100%;
@@ -100,4 +109,10 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+button{
+  svg{
+    width: 30px;
+    fill: var(--iconcolor);
+  }
 }

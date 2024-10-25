@@ -1,15 +1,8 @@
 #homedead {
-  // background-color: $brand;
   padding: 10px 0;
   .homeheadbox {
     display: grid;
     grid-template-columns: 20% 80%;
-    button{
-      svg{
-        width: 30px;
-        fill: var(--iconcolor);
-      }
-    }
     .logosearch {
       display: flex;
       align-items: center;
@@ -47,7 +40,7 @@
           position: absolute;
           top: 5%;
           right: 8px;
-          svg{
+          svg {
             width: 22px;
           }
         }
@@ -70,6 +63,79 @@
       }
       button {
         background-color: transparent;
+      }
+    }
+  }
+
+  .navbar {
+    height: 100%;
+    overflow-y: scroll;
+    width: 25%;
+    padding-bottom: 50px;
+    position: absolute;
+    top: 0;
+    background-color: var(--bodybg) !important;
+    // box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    border-right: 2px solid var(--gray);
+    button {
+      padding: 10px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+    }
+    .navbox {
+      margin-top: 200px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      img {
+        width: 150px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+      ul{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+    }
+  }
+  .navbarhide {
+    left: -100%;
+    animation: hidenav 0.4s linear;
+    -webkit-animation: hidenav 0.4s linear;
+    @keyframes hidenav {
+      0% {
+        top: 0;
+        left: 0%;
+      }
+      100% {
+        top: 0;
+        left: -40%;
+      }
+    }
+  }
+  .navbarshow {
+    top: 0;
+    left: 0;
+    animation: shownav 0.4s linear;
+    -webkit-animation: shownav 0.4s linear;
+    @keyframes shownav {
+      0% {
+        top: 0;
+        left: -40%;
+      }
+      100% {
+        top: 0;
+        left: 0;
       }
     }
   }
