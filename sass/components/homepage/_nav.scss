@@ -29,6 +29,7 @@
       column-gap: 24px;
       margin-left: 15px;
       form {
+        height: 30px;
         position: relative;
         width: 45px;
         border-radius: 10px;
@@ -44,7 +45,7 @@
         }
         button {
           position: absolute;
-          top:11%;
+          top: 5%;
           right: 8px;
           svg{
             width: 22px;

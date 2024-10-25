@@ -385,6 +385,7 @@ header .headbox select {
   margin-left: 15px;
 }
 #homedead .homeheadbox .contacts form {
+  height: 30px;
   position: relative;
   width: 45px;
   border-radius: 10px;
@@ -401,7 +402,7 @@ header .headbox select {
 }
 #homedead .homeheadbox .contacts form button {
   position: absolute;
-  top: 11%;
+  top: 5%;
   right: 8px;
 }
 #homedead .homeheadbox .contacts form button svg {

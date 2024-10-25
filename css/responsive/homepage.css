@@ -32,6 +32,9 @@
     top: 9%;
     right: 2px;
   }
+  #homedead .homeheadbox .contacts .headcontact{
+    width: 35px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
