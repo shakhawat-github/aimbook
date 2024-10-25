@@ -34,9 +34,11 @@ img {
   --deepwhite: #000;
   --gray: #999999;
   --purewhite: #000000;
+  --iconcolor: #293F54;
 }
 
 .dark[data-theme=theme] {
+  --iconcolor: #ffffff;
   --purewhite: #ffffff;
   --deepwhite: #999999;
   --bodybg: #021222;
@@ -348,59 +350,20 @@ header .headbox select {
 }
 #homedead .homeheadbox {
   display: grid;
-  grid-template-columns: 85% 15%;
+  grid-template-columns: 20% 80%;
 }
-#homedead .homeheadbox .logosearch {
-  display: grid;
-  grid-template-columns: 200px auto;
-  justify-content: space-between;
+#homedead .homeheadbox .logosearch .brandbtn {
+  display: flex;
   align-items: center;
-  overflow: hidden;
-}
-#homedead .homeheadbox .logosearch button {
-  padding: 10px;
-  font-size: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   color: #0064e0;
   background-color: transparent;
+  text-transform: uppercase;
 }
-#homedead .homeheadbox .logosearch button i {
-  margin-right: 10px;
-}
-#homedead .homeheadbox .logosearch form {
-  position: relative;
-  width: 45px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 1px solid #0064e0;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-#homedead .homeheadbox .logosearch form input {
-  width: 100%;
-  padding: 10px;
-}
-#homedead .homeheadbox .logosearch form button {
-  position: absolute;
-  top: -4%;
-  right: -7px;
-}
-#homedead .homeheadbox .logosearch .homesearch-cut {
-  width: 45px;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
-}
-#homedead .homeheadbox .logosearch .homesearch-extend {
-  width: 500px;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
+#homedead .homeheadbox .logosearch .brandbtn svg {
+  width: 30px;
+  fill: #0064e0;
 }
 #homedead .homeheadbox .contacts {
   display: flex;
@@ -410,9 +373,51 @@ header .headbox select {
        column-gap: 24px;
   margin-left: 15px;
 }
+#homedead .homeheadbox .contacts form {
+  position: relative;
+  width: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--iconcolor);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#homedead .homeheadbox .contacts form input {
+  width: 100%;
+  padding: 5px;
+}
+#homedead .homeheadbox .contacts form button {
+  position: absolute;
+  top: 11%;
+  right: 8px;
+}
+#homedead .homeheadbox .contacts form button svg {
+  width: 24px;
+  fill: var(--iconcolor);
+}
+#homedead .homeheadbox .contacts .homesearch-cut {
+  width: 45px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#homedead .homeheadbox .contacts .homesearch-extend {
+  width: 90%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
 #homedead .homeheadbox .contacts button {
-  padding: 5px 15px;
-  background-color: var(--gray);
+  background-color: transparent;
   color: #0064e0;
-  font-size: 20px;
+}
+#homedead .homeheadbox .contacts button svg {
+  fill: var(--iconcolor);
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */

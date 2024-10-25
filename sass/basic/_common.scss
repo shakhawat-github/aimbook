@@ -30,9 +30,11 @@ img {
   --deepwhite: #000;
   --gray: #999999;
   --purewhite: #000000;
+  --iconcolor: #293F54;
 }
 
 .dark[data-theme="theme"] {
+  --iconcolor: #ffffff;
   --purewhite: #ffffff;
   --deepwhite: #999999;
   --bodybg: #021222;

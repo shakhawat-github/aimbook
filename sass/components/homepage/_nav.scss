@@ -3,40 +3,49 @@
   padding: 10px 0;
   .homeheadbox {
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 20% 80%;
     .logosearch {
-      display: grid;
-      grid-template-columns: 200px auto;
-      justify-content: space-between;
-      align-items: center;
-      overflow: hidden;
-      button {
-        padding: 10px;
-        font-size: 20px;
+      .brandbtn {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
         color: $brand;
         background-color: transparent;
-        i {
-          margin-right: 10px;
+        text-transform: uppercase;
+        svg{
+          width: 30px;
+          fill: $brand;
         }
       }
+    }
+    .contacts {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      column-gap: 24px;
+      margin-left: 15px;
       form {
         position: relative;
         width: 45px;
         border-radius: 10px;
         overflow: hidden;
-        border: 1px solid $brand;
+        border: 1px solid var(--iconcolor);
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        input{
+        input {
           width: 100%;
-          padding: 10px;
+          padding: 5px;
         }
         button {
           position: absolute;
-          top: -4%;
-          right: -7px;
+          top:11%;
+          right: 8px;
+          svg {
+            width: 24px;
+            fill: var(--iconcolor);
+          }
         }
       }
       .homesearch-cut {
@@ -48,26 +57,21 @@
         -o-transition: 0.4s;
       }
       .homesearch-extend {
-        width: 500px;
+        width: 90%;
         transition: 0.4s;
         -webkit-transition: 0.4s;
         -moz-transition: 0.4s;
         -ms-transition: 0.4s;
         -o-transition: 0.4s;
       }
-    }
-    .contacts {
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        column-gap: 24px;
-        margin-left: 15px;
-        button{
-            padding: 5px 15px;
-            background-color: var(--gray);
-            color: $brand;
-            font-size: 20px;
+      button {
+        background-color: transparent;
+        color: $brand;
+        svg {
+          fill: var(--iconcolor);
+          width: 30px;
         }
+      }
     }
   }
 }
