@@ -247,6 +247,8 @@ header .headbox select {
   text-transform: capitalize;
   color: var(--deepwhite);
   font-weight: 700;
+  display: flex;
+  justify-content: space-between;
 }
 #join .mainjoinbox .join .tab img {
   border-radius: 20px;
