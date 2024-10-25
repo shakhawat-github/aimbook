@@ -98,6 +98,13 @@ img {
   background-image: url("../../svg/calender.svg");
 }
 
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
 header {
   padding: 10px 0;
 }
@@ -352,18 +359,22 @@ header .headbox select {
   display: grid;
   grid-template-columns: 20% 80%;
 }
+#homedead .homeheadbox button svg {
+  width: 30px;
+  fill: var(--iconcolor);
+}
+#homedead .homeheadbox .logosearch {
+  display: flex;
+  align-items: center;
+}
 #homedead .homeheadbox .logosearch .brandbtn {
   display: flex;
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  color: #0064e0;
+  color: var(--iconcolor);
   background-color: transparent;
   text-transform: uppercase;
-}
-#homedead .homeheadbox .logosearch .brandbtn svg {
-  width: 30px;
-  fill: #0064e0;
 }
 #homedead .homeheadbox .contacts {
   display: flex;
@@ -394,8 +405,7 @@ header .headbox select {
   right: 8px;
 }
 #homedead .homeheadbox .contacts form button svg {
-  width: 24px;
-  fill: var(--iconcolor);
+  width: 22px;
 }
 #homedead .homeheadbox .contacts .homesearch-cut {
   width: 45px;
@@ -415,9 +425,4 @@ header .headbox select {
 }
 #homedead .homeheadbox .contacts button {
   background-color: transparent;
-  color: #0064e0;
-}
-#homedead .homeheadbox .contacts button svg {
-  fill: var(--iconcolor);
-  width: 30px;
 }/*# sourceMappingURL=style.css.map */

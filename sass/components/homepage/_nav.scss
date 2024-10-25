@@ -4,18 +4,22 @@
   .homeheadbox {
     display: grid;
     grid-template-columns: 20% 80%;
+    button{
+      svg{
+        width: 30px;
+        fill: var(--iconcolor);
+      }
+    }
     .logosearch {
+      display: flex;
+      align-items: center;
       .brandbtn {
         display: flex;
         align-items: center;
         column-gap: 10px;
-        color: $brand;
+        color: var(--iconcolor);
         background-color: transparent;
         text-transform: uppercase;
-        svg{
-          width: 30px;
-          fill: $brand;
-        }
       }
     }
     .contacts {
@@ -42,9 +46,8 @@
           position: absolute;
           top:11%;
           right: 8px;
-          svg {
-            width: 24px;
-            fill: var(--iconcolor);
+          svg{
+            width: 22px;
           }
         }
       }
@@ -66,11 +69,6 @@
       }
       button {
         background-color: transparent;
-        color: $brand;
-        svg {
-          fill: var(--iconcolor);
-          width: 30px;
-        }
       }
     }
   }
