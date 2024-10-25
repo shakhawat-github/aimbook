@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
   <head>
-    <title>AIMBOOK</title>
+    <title>OCHIGRAM</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,7 +16,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/responsive.signuppage.css">
+    <link rel="stylesheet" href="css/responsive.signuppage.css" />
     <style>
       #loginpage {
         padding: 0 0 30px;
@@ -49,6 +49,24 @@
     </header>
     <!-- header end -->
     <main>
+      <!-- join start -->
+      <section id="join">
+        <div class="container">
+          <div class="mainjoinbox">
+            <div class="join">
+              <div class="tab joinimg">
+                <h2>join aimbook</h2>
+                <img src="images/owner2.png" alt="owner" />
+                <p>
+                  Create an account to connect with friends , family and
+                  communities of people who share your intrrest.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- join end -->
       <!-- signup start -->
       <section id="signup">
         <div class="container">
@@ -56,41 +74,53 @@
             <form action="#">
               <div class="form-group">
                 <input type="text" name="name" required="required" />
-                <label for="name">First Name</label>
+                <label for="name">Profile Name</label>
               </div>
               <div class="form-group">
                 <input type="text" name="name" required="required" />
-                <label for="name">Last Name</label>
-              </div>
-              <div class="form-group">
-                <input type="date" name="name" required="required" />
-                <label for="name">Date of Birth</label>
+                <label for="name">Username</label>
               </div>
               <div class="form-group">
                 <input type="email" name="name" required="required" />
                 <label for="name">E-mail</label>
               </div>
               <div class="form-group">
+                <input type="date" name="name" required="required" />
+                <label for="name">Date of Birth</label>
+              </div>
+              <div class="form-group">
+                <select name="gender" id="gender" required="required">
+                  <option value="#" selected="selected" disabled="disabled">
+                    Gender
+                  </option>
+                  <option value="male">male</option>
+                  <option value="female">female</option>
+                  <option value="others">others</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <input type="text" name="name" required="required" />
                 <label for="name">Country</label>
               </div>
               <div class="form-group">
-                <input type="password" name="password" class="password" required="required" />
+                <input
+                  type="password"
+                  name="password"
+                  class="password"
+                  required="required"
+                />
                 <label for="password">Password</label>
                 <i class="fa-regular fa-eye-slash passfinder"></i>
               </div>
               <div class="form-group">
-                <input type="password" name="password" class="password" required="required" />
+                <input
+                  type="password"
+                  name="password"
+                  class="password"
+                  required="required"
+                />
                 <label for="password">Re-enter Password</label>
                 <i class="fa-regular fa-eye-slash passfinder"></i>
-              </div>
-              <div class="form-group">
-                <select name="gender" id="gender" required="required">
-                    <option value="#" selected="selected" disabled="disabled">Please select your gender</option>
-                    <option value="male">male</option>
-                    <option value="female">female</option>
-                    <option value="others">others</option>
-                </select>
               </div>
               <button type="submit">Sign up</button>
             </form>
@@ -99,7 +129,7 @@
       </section>
       <!-- signup end -->
     </main>
-    <footer id="footer">
+    <footer id="footer" class="signupfoot">
       <div class="container">
         <div class="newcreate">
           <a href="#" class="haveacc">I already have an account</a>
@@ -107,7 +137,7 @@
         <div class="copyright">
           <h6>
             <i class="fa-regular fa-copyright"></i> 2024
-            <a href="create.html">AimBook</a> . All right reserved
+            <a href="create.html">OCHIGRAM</a> . All right reserved
           </h6>
         </div>
       </div>

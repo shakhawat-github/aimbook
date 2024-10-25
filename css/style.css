@@ -248,31 +248,6 @@ header .headbox select {
   color: var(--deepwhite);
   font-weight: 700;
 }
-#join .mainjoinbox .join .tab .joinbtns {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  padding-bottom: 20px;
-}
-#join .mainjoinbox .join .tab .joinbtns a {
-  text-align: center;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  padding: 5px;
-  font-size: 18px;
-  font-weight: 500;
-}
-#join .mainjoinbox .join .tab .joinbtns .getstart {
-  color: #fff;
-  background-color: #0064e0;
-}
-#join .mainjoinbox .join .tab .joinbtns .alreadyhave {
-  color: var(--deepwhite);
-  border: 2px solid var(--gray);
-}
 #join .mainjoinbox .join .tab img {
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -360,4 +335,8 @@ header .headbox select {
   -o-border-radius: 20px;
   font-weight: 600;
   font-size: 20px;
+}
+
+.signupfoot .haveacc {
+  margin-top: 20px;
 }/*# sourceMappingURL=style.css.map */
