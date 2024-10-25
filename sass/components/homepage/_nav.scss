@@ -1,0 +1,72 @@
+#homedead {
+  // background-color: $brand;
+  padding: 10px 0;
+  .homeheadbox {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    .logosearch {
+      display: grid;
+      grid-template-columns: 200px auto;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      button {
+        padding: 10px;
+        font-size: 20px;
+        color: $brand;
+        background-color: transparent;
+        i {
+          margin-right: 10px;
+        }
+      }
+      form {
+        position: relative;
+        width: 45px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid $brand;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        input{
+          width: 100%;
+          padding: 10px;
+        }
+        button {
+          position: absolute;
+          top: -4%;
+          right: -7px;
+        }
+      }
+      .homesearch-cut {
+        width: 45px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+      }
+      .homesearch-extend {
+        width: 500px;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+      }
+    }
+    .contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 15px;
+        button{
+            padding: 5px 15px;
+            background-color: var(--gray);
+            color: $brand;
+            font-size: 20px;
+        }
+    }
+  }
+}

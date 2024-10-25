@@ -20,7 +20,7 @@ passfinders.forEach((passfinder) => {
   passfinder.addEventListener("click", () => {
     // Get the password input field associated with the current button
     const passwordField = document.getElementById(passfinder.dataset.password);
-    
+
     if (passwordField.type === "password") {
       passwordField.type = "text";
       passfinder.classList = "fa-regular fa-eye";
@@ -33,10 +33,11 @@ passfinders.forEach((passfinder) => {
 // password show/hide end
 
 // hide join section start
-const hidejoin = document.querySelector('.hidejoin');
-const join = document.querySelector('#join')
-hidejoin.addEventListener('click' , ()=>{
-  join.style.display = 'none'
-})
+const hidejoin = document.querySelector(".hidejoin");
+const join = document.querySelector("#join");
+hidejoin.addEventListener("click", () => {
+  join.style.display = "none";
+});
 // hide join section end
+
 

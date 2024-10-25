@@ -341,4 +341,76 @@ header .headbox select {
 
 .signupfoot .haveacc {
   margin-top: 20px;
+}
+
+#homedead {
+  padding: 10px 0;
+}
+#homedead .homeheadbox {
+  display: grid;
+  grid-template-columns: 85% 15%;
+}
+#homedead .homeheadbox .logosearch {
+  display: grid;
+  grid-template-columns: 200px auto;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+#homedead .homeheadbox .logosearch button {
+  padding: 10px;
+  font-size: 20px;
+  color: #0064e0;
+  background-color: transparent;
+}
+#homedead .homeheadbox .logosearch button i {
+  margin-right: 10px;
+}
+#homedead .homeheadbox .logosearch form {
+  position: relative;
+  width: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #0064e0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#homedead .homeheadbox .logosearch form input {
+  width: 100%;
+  padding: 10px;
+}
+#homedead .homeheadbox .logosearch form button {
+  position: absolute;
+  top: -4%;
+  right: -7px;
+}
+#homedead .homeheadbox .logosearch .homesearch-cut {
+  width: 45px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#homedead .homeheadbox .logosearch .homesearch-extend {
+  width: 500px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#homedead .homeheadbox .contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+#homedead .homeheadbox .contacts button {
+  padding: 5px 15px;
+  background-color: var(--gray);
+  color: #0064e0;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
