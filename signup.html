@@ -16,7 +16,6 @@
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <link rel="stylesheet" href="css/responsive.signuppage.css" />
     <style>
       #loginpage {
         padding: 0 0 30px;
@@ -50,7 +49,7 @@
     <!-- header end -->
     <main>
       <!-- join start -->
-      <section id="join">
+      <section id="join" style="background-color: #ffebf3ff;">
         <div class="container">
           <div class="mainjoinbox">
             <div class="join">
@@ -108,9 +107,10 @@
                   name="password"
                   class="password"
                   required="required"
+                  id="password1"
                 />
                 <label for="password">Password</label>
-                <i class="fa-regular fa-eye-slash passfinder"></i>
+                <i class="fa-regular fa-eye-slash passfinder" data-password="password1"></i>
               </div>
               <div class="form-group">
                 <input
@@ -118,9 +118,10 @@
                   name="password"
                   class="password"
                   required="required"
+                  id="password2"
                 />
                 <label for="password">Re-enter Password</label>
-                <i class="fa-regular fa-eye-slash passfinder"></i>
+                <i class="fa-regular fa-eye-slash passfinder" data-password="password2"></i>
               </div>
               <button type="submit">Sign up</button>
             </form>
@@ -137,7 +138,7 @@
         <div class="copyright">
           <h6>
             <i class="fa-regular fa-copyright"></i> 2024
-            <a href="create.html">OCHIGRAM</a> . All right reserved
+            <a href="home.html">OCHIGRAM</a> . All right reserved
           </h6>
         </div>
       </div>

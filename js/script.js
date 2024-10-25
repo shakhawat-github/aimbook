@@ -14,16 +14,21 @@ round.addEventListener("click", () => {
 // common script end
 
 // password show/hide start
-const passfinder = document.querySelector(".passfinder");
-const password = document.querySelector(".password");
-passfinder.addEventListener("click", () => {
-  if ((password.type = "password" && password.type != "text")) {
-    password.type = "text";
-    passfinder.classList = "fa-regular fa-eye";
-  } else if ((password.type = "text" && password.type != "password")) {
-    password.type = "password";
-    passfinder.classList = "fa-regular fa-eye-slash";
-  }
+
+const passfinders = document.querySelectorAll(".passfinder");
+passfinders.forEach((passfinder) => {
+  passfinder.addEventListener("click", () => {
+    // Get the password input field associated with the current button
+    const passwordField = document.getElementById(passfinder.dataset.password);
+    
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      passfinder.classList = "fa-regular fa-eye";
+    } else {
+      passwordField.type = "password";
+      passfinder.classList = "fa-regular fa-eye-slash";
+    }
+  });
 });
 // password show/hide end
 
