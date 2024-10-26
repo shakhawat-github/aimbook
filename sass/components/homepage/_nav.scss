@@ -35,8 +35,10 @@
         input {
           width: 100%;
           padding: 5px;
+          background-color: var(--deepdark);
         }
         button {
+          color: var(--iconcolor);
           position: absolute;
           top: 5%;
           right: 8px;
@@ -63,6 +65,11 @@
       }
       button {
         background-color: transparent;
+        i{
+          color: var(--iconcolor);
+          margin-top: 3px;
+          font-size: 25px;
+        }
       }
     }
   }

@@ -407,8 +407,10 @@ header .headbox select {
 #homedead .homeheadbox .contacts form input {
   width: 100%;
   padding: 5px;
+  background-color: var(--deepdark);
 }
 #homedead .homeheadbox .contacts form button {
+  color: var(--iconcolor);
   position: absolute;
   top: 5%;
   right: 8px;
@@ -434,6 +436,11 @@ header .headbox select {
 }
 #homedead .homeheadbox .contacts button {
   background-color: transparent;
+}
+#homedead .homeheadbox .contacts button i {
+  color: var(--iconcolor);
+  margin-top: 3px;
+  font-size: 25px;
 }
 #homedead .navbar {
   height: 100%;
