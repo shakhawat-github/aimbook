@@ -333,6 +333,7 @@ header .headbox select {
   position: absolute;
   top: 17px;
   right: 15px;
+  color: var(--deepwhite);
 }
 #signup .signupbox form .form-group select {
   background-color: var(--deepdark);
