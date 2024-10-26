@@ -34,8 +34,10 @@
         -o-border-radius: 10px;
         input {
           width: 100%;
-          padding: 5px;
+          padding: 0 5px 5px;
           background-color: var(--deepdark);
+          color: var(--deepwhite);
+          font-size: 15px;
         }
         button {
           color: var(--iconcolor);
@@ -68,14 +70,14 @@
         i{
           color: var(--iconcolor);
           margin-top: 3px;
-          font-size: 25px;
+          font-size: 24px;
         }
       }
     }
   }
 
   .navbar {
-    height: 100%;
+    height: 100vh;
     overflow-y: scroll;
     width: 25%;
     padding-bottom: 50px;
@@ -87,7 +89,7 @@
     button {
       padding: 10px;
       position: absolute;
-      top: 20px;
+      top: 10px;
       right: 20px;
       background-color: transparent;
     }
@@ -116,34 +118,22 @@
     }
   }
   .navbarhide {
+    left: -70%;
+    top: 0;
     left: -100%;
-    animation: hidenav 0.4s linear;
-    -webkit-animation: hidenav 0.4s linear;
-    @keyframes hidenav {
-      0% {
-        top: 0;
-        left: 0%;
-      }
-      100% {
-        top: 0;
-        left: -40%;
-      }
-    }
-  }
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
   .navbarshow {
     top: 0;
     left: 0;
-    animation: shownav 0.4s linear;
-    -webkit-animation: shownav 0.4s linear;
-    @keyframes shownav {
-      0% {
-        top: 0;
-        left: -40%;
-      }
-      100% {
-        top: 0;
-        left: 0;
-      }
-    }
-  }
+    transition: .7s;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+}
 }
