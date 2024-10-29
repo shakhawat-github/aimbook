@@ -1,13 +1,18 @@
 #signup {
   .signupbox {
+    width: 50%;
+    margin: 0 auto;
     form {
-      width: 80%;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       row-gap: 25px;
+      width: 80%;
       .form-group {
         @include typebox;
+        input{
+          padding-left: 53px;
+        }
         i {
           position: absolute;
           top: 17px;

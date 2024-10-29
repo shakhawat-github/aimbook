@@ -1,26 +1,17 @@
 #footer {
-  .newcreate {
-    text-align: center;
-    padding-bottom: 30px;
-    .createnewacc {
-      padding: 10px;
-      color: $brand;
-      font-weight: 500;
-      border: 1px solid $brand;
-      width: 80%;
-      text-align: center;
-      border-radius: 30px;
-      -webkit-border-radius: 30px;
-      -moz-border-radius: 30px;
-      -ms-border-radius: 30px;
-      -o-border-radius: 30px;
-    }
-  }
+  background-color: var(--bodybg);
+  padding: 20px 0;
   .copyright{
     text-align: center;
     h6{
       font-size: 16px;
-      color: var(--deepwhite);
+      color: $brand;
+      a{
+        color: $brand;
+      }
+      i{
+        color: $brand;
+      }
     }
   }
 }

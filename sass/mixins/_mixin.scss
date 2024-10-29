@@ -8,27 +8,27 @@
   label {
     position: absolute;
     top: 10px;
-    left: 2%;
+    left: 7%;
     color: $gray;
     font-size: 14pt;
     font-weight: normal;
     pointer-events: none;
     transition: all 0.2s ease;
     padding: 0 10px;
-    background-color: var(--deepdark);
+    background-color: var(--bodybg);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
   }
-  input{
-    border: 3px solid $gray;
-    padding: 10px;
+  input {
+    border: 3px solid var(--bgtwo);
+    height: 45px;
     width: 100%;
-    background-color: var(--deepdark);
+    background-color: var(--bodybg);
     color: var(--deepwhite);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-}
+  }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="theme" data-theme="white">
   <head>
     <title>OCHIGRAM</title>
     <!-- Required meta tags -->
@@ -9,20 +9,20 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <!-- font awesome -->
-     <link rel="stylesheet" href="css/all.min.css">
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <link rel="icon" href="svg/logo.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/responsive.css">
     <style>
       #loginpage {
-        padding: 0 0 30px;
         height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-image: url("../../../images/loginbg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
     </style>
   </head>
@@ -37,11 +37,32 @@
             <option value="bangla">bangla</option>
             <option value="arabic">arabic</option>
           </select>
-          <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-              <input type="checkbox" id="checkbox" class="themecheckbox" />
-              <div class="slider round" id="themecheck"></div>
-            </label>
+          <div class="datatheme">
+            <button type="button" class="item" id="itemone">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                  d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"
+                />
+              </svg>
+              <span>light</span>
+            </button>
+            <button type="button" class="item" id="itemtwo">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                  d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
+                />
+              </svg>
+              <span>dark</span>
+            </button>
+            <button type="button" class="item" id="itemthree">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                <path
+                  d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+                />
+              </svg>
+              <span>black</span>
+            </button>
+            <span class="themeslider"></span>
           </div>
         </div>
       </div>
@@ -51,32 +72,35 @@
       <section id="login">
         <div class="container">
           <div class="loginbox">
-            <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
-            <h2>Welcome to Ochigram</h2>
-            <p>You can log in or create a new account</p>
-            <form action="#">
-              <div class="form-group">
-                <input type="text" name="name" required="required" />
-                <label for="name">Name</label>
-              </div>
+            <div class="loginbg">
+              <form action="#">
+                <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
+                <h2>Welcome to Ochigram</h2>
+                <p>You can log in or create a new account</p>
 
-              <div class="form-group">
-                <input type="password" name="password" class="password" required="required" />
-                <label for="password">Password</label>
-                <i class="fa-regular fa-eye-slash passfinder"></i>
-              </div>
-              <button type="submit">Log in</button>
-            </form>
-            <a href="#" class="forgot">Forgot password?</a>
+                <div class="form-group">
+                  <input type="text" name="username" required="required" />
+                  <div class="lottie"><span id="lottie-animation-1"></span></div>
+                  <label for="username">Username</label>
+                </div>
+
+                <div class="form-group">
+                  <input type="password" name="password" class="password" required="required" id="loginpass"/>
+                  <div class="lottie"><span id="lottie-animation-2"></span></div>
+                  <label for="password">Password</label>
+                  <i class="fa-regular fa-eye-slash passfinder"></i>
+                </div>
+                <button type="submit">Log in <span id="lottie-animation-3"></span></button>
+                <a href="lottie.html" class="forgot">Forgot password?</a>
+                <a href="signup.html" class="createnewacc">Create new account</a >
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <footer id="footer">
       <div class="container">
-        <div class="newcreate">
-          <a href="signup.html" class="createnewacc">Create new account</a>
-        </div>
         <div class="copyright">
           <h6>
             <i class="fa-regular fa-copyright"></i> 2024
@@ -85,11 +109,9 @@
         </div>
       </div>
     </footer>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- lottie animation -->
+    <script src="js/lottie.min.js"></script>
     <!-- script -->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

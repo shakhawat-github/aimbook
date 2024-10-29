@@ -24,6 +24,11 @@ ul {
   display: none;
 }
 
+.container {
+  width: 100%;
+  padding: 0 10px;
+}
+
 body {
   position: relative;
   background-color: var(--bodybg);
@@ -34,71 +39,101 @@ img {
   width: 100%;
 }
 
+i {
+  color: var(--txttwo);
+}
+
 :root {
-  --brand: #0064e0;
-  --bodybg: #f1f1f1;
-  --deepdark: #fff;
-  --deepwhite: #000;
-  --gray: #999999;
-  --purewhite: #000000;
-  --iconcolor: #293F54;
+  --bodybg: #ffffff;
+  --bgtwo: #d4d8dd;
+  --loginbg: rgba(255, 255, 255, 0.4);
+  --txtone: #191919;
+  --txttwo: #737374;
+  --sliderbg: #ffffff;
 }
 
-.dark[data-theme=theme] {
-  --iconcolor: #ffffff;
-  --purewhite: #ffffff;
-  --deepwhite: #999999;
-  --bodybg: #021222;
-  --deepdark: #000;
+.theme[data-theme=dark] {
+  --bodybg: #323339;
+  --bgtwo: #222128;
+  --txtone: #eeeeee;
+  --txttwo: #d3d5db;
+  --sliderbg: #494a50;
 }
 
-.theme-switch-wrapper {
+.theme[data-theme=black] {
+  --bodybg: #1b1d23;
+  --bgtwo: #000001;
+  --txtone: #edeeef;
+  --txttwo: #d4d7e1;
+  --sliderbg: #343844;
+}
+
+.lottie {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 45px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  background-color: #ffffff;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 3px solid var(--bgtwo);
 }
-.theme-switch-wrapper .theme-switch {
+.lottie span {
   display: inline-block;
-  height: 34px;
-  position: relative;
-  width: 60px;
 }
-.theme-switch-wrapper .theme-switch input {
-  display: none;
-}
-.theme-switch-wrapper .theme-switch .slider {
-  background-color: #0064e0;
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-.theme-switch-wrapper .theme-switch .slider::before {
-  background-color: #021222;
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
-}
-.theme-switch-wrapper .theme-switch .themecheckcolor::before {
-  background-color: #f1f1f1;
-}
-.theme-switch-wrapper .theme-switch input:checked + .slider {
-  background-color: #0064e0;
-}
-.theme-switch-wrapper .theme-switch input:checked + .slider:before {
-  transform: translateX(26px);
+.lottie .resized {
+  width: 30px;
 }
 
-.slider.round:before {
-  border-radius: 50%;
+.datatheme {
+  background-color: var(--bgtwo);
+  padding: 8px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.datatheme .themeslider {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 120px;
+  height: 45px;
+  background-color: var(--sliderbg);
+  z-index: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.datatheme button {
+  background-color: transparent;
+  color: var(--txttwo);
+  padding: 5px 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  align-items: center;
+  text-transform: capitalize;
+  z-index: 1;
+}
+.datatheme button svg {
+  fill: var(--txttwo);
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -112,6 +147,19 @@ input[type=search]::-webkit-search-results-decoration {
   display: none;
 }
 
+::-moz-selection {
+  background: #59a98b;
+  color: var(--txtone);
+}
+
+::selection {
+  background: #59a98b;
+  color: var(--txtone);
+}
+
+button {
+  background-color: transparent;
+}
 button svg {
   width: 30px;
   fill: var(--iconcolor);
@@ -119,6 +167,7 @@ button svg {
 
 header {
   padding: 10px 0;
+  background-color: var(--bodybg);
 }
 header .headbox {
   display: flex;
@@ -132,56 +181,67 @@ header .headbox select {
   border: 0;
   background-color: transparent;
   padding: 5px 15px;
-  color: var(--deepwhite);
+  color: var(--txtone);
 }
-
+header .headbox select option {
+  background-color: var(--bodybg);
+}
 #login .loginbox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#login .loginbox .logo {
-  padding: 5% 0;
-}
 #login .loginbox .logo img {
   width: 100px;
 }
-#login .loginbox form {
-  width: 100%;
+#login .loginbox .loginbg {
+  width: 50%;
+}
+#login .loginbox .loginbg form {
+  text-align: center;
+  background-color: var(--loginbg);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
-#login .loginbox form .form-group {
+#login .loginbox .loginbg form .form-group {
   width: 80%;
   margin: 0 auto;
   position: relative;
   position: relative;
 }
-#login .loginbox form .form-group input:focus ~ label,
-#login .loginbox form .form-group input:valid ~ label {
+#login .loginbox .loginbg form .form-group input:focus ~ label,
+#login .loginbox .loginbg form .form-group input:valid ~ label {
   top: -10px;
   font-size: 10pt;
 }
-#login .loginbox form .form-group label {
+#login .loginbox .loginbg form .form-group label {
   position: absolute;
   top: 10px;
-  left: 2%;
+  left: 7%;
   color: #999999;
   font-size: 14pt;
   font-weight: normal;
   pointer-events: none;
   transition: all 0.2s ease;
   padding: 0 10px;
-  background-color: var(--deepdark);
+  background-color: var(--bodybg);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-#login .loginbox form .form-group input {
-  border: 3px solid #999999;
-  padding: 10px;
+#login .loginbox .loginbg form .form-group input {
+  border: 3px solid var(--bgtwo);
+  height: 45px;
   width: 100%;
-  background-color: var(--deepdark);
+  background-color: var(--bodybg);
   color: var(--deepwhite);
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -189,24 +249,33 @@ header .headbox select {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-#login .loginbox form .form-group input {
+#login .loginbox .loginbg form .form-group input {
+  padding-left: 50px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  color: var(--deepwhite);
+  color: var(--txtone);
+  font-size: 16px;
 }
-#login .loginbox form .form-group i {
+#login .loginbox .loginbg form .form-group .lottie span {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  width: 35px;
+}
+#login .loginbox .loginbg form .form-group i {
   position: absolute;
-  top: 7px;
+  top: 3px;
   right: 10px;
   padding: 10px;
-  color: var(--deepwhite);
 }
-#login .loginbox form button {
-  padding: 10px;
-  background-color: #0064e0;
+#login .loginbox .loginbg form button {
+  padding: 5px;
+  background-color: #59a98b;
   color: #fff;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -217,6 +286,30 @@ header .headbox select {
   margin: 0 auto;
   font-weight: 600;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#login .loginbox .loginbg form button span {
+  display: inline-block;
+  width: 35px;
+}
+#login .loginbox .loginbg form .createnewacc {
+  padding: 10px;
+  color: var(--txtone);
+  background-color: #59a98b;
+  font-weight: 500;
+  border: 1px solid #59a98b;
+  width: 80%;
+  text-align: center;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  margin: 0 auto;
 }
 #login .loginbox .forgot {
   margin-top: 20px;
@@ -225,42 +318,38 @@ header .headbox select {
   color: var(--deepwhite);
 }
 #login .loginbox h2 {
-  color: var(--deepwhite);
+  color: var(--txtone);
   font-size: 22px;
   font-weight: 600;
 }
 #login .loginbox p {
-  color: var(--deepwhite);
-  opacity: 0.6;
+  color: var(--txtone);
+  opacity: 0.7;
 }
 
-#footer .newcreate {
-  text-align: center;
-  padding-bottom: 30px;
-}
-#footer .newcreate .createnewacc {
-  padding: 10px;
-  color: #0064e0;
-  font-weight: 500;
-  border: 1px solid #0064e0;
-  width: 80%;
-  text-align: center;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+#footer {
+  background-color: var(--bodybg);
+  padding: 20px 0;
 }
 #footer .copyright {
   text-align: center;
 }
 #footer .copyright h6 {
   font-size: 16px;
-  color: var(--deepwhite);
+  color: #59a98b;
+}
+#footer .copyright h6 a {
+  color: #59a98b;
+}
+#footer .copyright h6 i {
+  color: #59a98b;
 }
 
+#join .mainjoinbox {
+  width: 50%;
+  margin: 0 auto;
+}
 #join .mainjoinbox .join {
-  width: 80%;
   margin: 0 auto;
 }
 #join .mainjoinbox .join .tab h2 {
@@ -288,12 +377,16 @@ header .headbox select {
   padding: 20px 0;
 }
 
+#signup .signupbox {
+  width: 50%;
+  margin: 0 auto;
+}
 #signup .signupbox form {
-  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   row-gap: 25px;
+  width: 80%;
 }
 #signup .signupbox form .form-group {
   position: relative;
@@ -306,28 +399,31 @@ header .headbox select {
 #signup .signupbox form .form-group label {
   position: absolute;
   top: 10px;
-  left: 2%;
+  left: 7%;
   color: #999999;
   font-size: 14pt;
   font-weight: normal;
   pointer-events: none;
   transition: all 0.2s ease;
   padding: 0 10px;
-  background-color: var(--deepdark);
+  background-color: var(--bodybg);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
 #signup .signupbox form .form-group input {
-  border: 3px solid #999999;
-  padding: 10px;
+  border: 3px solid var(--bgtwo);
+  height: 45px;
   width: 100%;
-  background-color: var(--deepdark);
+  background-color: var(--bodybg);
   color: var(--deepwhite);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+#signup .signupbox form .form-group input {
+  padding-left: 53px;
 }
 #signup .signupbox form .form-group i {
   position: absolute;
@@ -351,7 +447,7 @@ header .headbox select {
 #signup .signupbox form button {
   color: #fff;
   padding: 5px;
-  background-color: #0064e0;
+  background-color: #59a98b;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;

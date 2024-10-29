@@ -1,5 +1,5 @@
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,7 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-ul{
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -21,9 +21,10 @@ ul{
 ::-webkit-scrollbar {
   display: none;
 }
-// .container {
-//   max-width: 1000px;
-// }
+.container {
+  width: 100%;
+  padding: 0 10px;
+}
 body {
   position: relative;
   background-color: var(--bodybg);
@@ -32,77 +33,100 @@ body {
 img {
   width: 100%;
 }
+i {
+  color: var(--txttwo);
+}
 :root {
-  --brand: #0064e0;
-  --bodybg: #f1f1f1;
-  --deepdark: #fff;
-  --deepwhite: #000;
-  --gray: #999999;
-  --purewhite: #000000;
-  --iconcolor: #293F54;
+  --bodybg: #ffffff;
+  --bgtwo: #d4d8dd;
+  --loginbg: rgba(255, 255, 255, 0.4);
+  --txtone: #191919;
+  --txttwo: #737374;
+  --sliderbg: #ffffff;
 }
 
-.dark[data-theme="theme"] {
-  --iconcolor: #ffffff;
-  --purewhite: #ffffff;
-  --deepwhite: #999999;
-  --bodybg: #021222;
-  --deepdark: #000;
+.theme[data-theme="dark"] {
+  --bodybg: #323339;
+  --bgtwo: #222128;
+  --txtone: #eeeeee;
+  --txttwo: #d3d5db;
+  --sliderbg: #494a50;
 }
-
-.theme-switch-wrapper {
+.theme[data-theme="black"] {
+  --bodybg: #1b1d23;
+  --bgtwo: #000001;
+  --txtone: #edeeef;
+  --txttwo: #d4d7e1;
+  --sliderbg: #343844;
+}
+.lottie {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 45px;
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  .theme-switch {
+  background-color: #ffffff;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 3px solid var(--bgtwo);
+  span {
     display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-    input {
-      display: none;
-    }
-    .slider {
-      background-color: $brand;
-      bottom: 0;
-      cursor: pointer;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transition: 0.4s;
-      border-radius: 34px;
-      &::before {
-        background-color: $black;
-        bottom: 4px;
-        content: "";
-        height: 26px;
-        left: 4px;
-        position: absolute;
-        transition: 0.4s;
-        width: 26px;
-      }
-    }
-    .themecheckcolor {
-      &::before {
-        background-color: $white;
-      }
-    }
-    input:checked + .slider {
-      background-color: $brand;
-    }
-    input:checked + .slider:before {
-      transform: translateX(26px);
+  }
+  .resized{
+    width: 30px;
+  }
+}
+.datatheme {
+  background-color: var(--bgtwo);
+  padding: 8px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  .themeslider {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 120px;
+    height: 45px;
+    background-color: var(--sliderbg);
+    z-index: 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  button {
+    background-color: transparent;
+    color: var(--txttwo);
+    padding: 5px 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    text-transform: capitalize;
+    z-index: 1;
+    svg {
+      fill: var(--txttwo);
     }
   }
 }
 
-.slider.round:before {
-  border-radius: 50%;
-}
-
-::-webkit-calendar-picker-indicator{
-  background-image: url('../../svg/calender.svg');
+::-webkit-calendar-picker-indicator {
+  background-image: url("../../svg/calender.svg");
 }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
@@ -110,8 +134,20 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
 }
-button{
-  svg{
+
+::-moz-selection {
+  background: $brand;
+  color: var(--txtone);
+}
+
+::selection {
+  background: $brand;
+  color: var(--txtone);
+}
+
+button {
+  background-color: transparent;
+  svg {
     width: 30px;
     fill: var(--iconcolor);
   }
