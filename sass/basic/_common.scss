@@ -60,18 +60,9 @@ i {
   --sliderbg: #343844;
 }
 .lottie {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 50px;
-  height: 45px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #ffffff;
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  border: 3px solid var(--bgtwo);
   span {
     display: inline-block;
   }

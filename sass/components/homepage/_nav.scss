@@ -1,139 +1,53 @@
 #homedead {
-  padding: 10px 0;
-  .homeheadbox {
+  background-color: var(--bodybg);
+  overflow-x: hidden;
+  .headbox {
     display: grid;
-    grid-template-columns: 20% 80%;
-    .logosearch {
-      display: flex;
-      align-items: center;
-      .brandbtn {
-        display: flex;
-        align-items: center;
-        column-gap: 10px;
-        color: var(--iconcolor);
-        background-color: transparent;
-        text-transform: uppercase;
-      }
-    }
-    .contacts {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      column-gap: 24px;
-      margin-left: 15px;
-      form {
-        height: 30px;
+    grid-template-columns: 250px 1fr;
+    .header-brand {
+      .lottie {
         position: relative;
-        width: 45px;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 1px solid var(--iconcolor);
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
-        input {
-          width: 100%;
-          padding: 0 40px 5px 5px;
-          background-color: var(--deepdark);
-          color: var(--deepwhite);
-          font-size: 15px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        span {
+          display: block;
+          width: 45px;
         }
-        button {
-          color: var(--iconcolor);
-          position: absolute;
-          top: 5%;
-          right: 8px;
-          svg {
-            width: 22px;
-          }
-        }
-      }
-      .homesearch-cut {
-        width: 45px;
-        transition: 0.4s;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -ms-transition: 0.4s;
-        -o-transition: 0.4s;
-      }
-      .homesearch-extend {
-        width: 90%;
-        transition: 0.4s;
-        -webkit-transition: 0.4s;
-        -moz-transition: 0.4s;
-        -ms-transition: 0.4s;
-        -o-transition: 0.4s;
-      }
-      button {
-        background-color: transparent;
-        i{
-          color: var(--iconcolor);
-          margin-top: 3px;
-          font-size: 24px;
+        .brand {
+          @include brand($width: 70%);
         }
       }
     }
   }
-
-  .navbar {
+  #navigation {
+    width: 20%;
     height: 100vh;
-    overflow-y: scroll;
-    width: 25%;
-    padding-bottom: 50px;
+    background-color: var(--bodybg);
+    border-right: 1px solid var(--txtone);
     position: absolute;
     top: 0;
-    background-color: var(--bodybg) !important;
-    // box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    border-right: 2px solid var(--gray);
-    button {
-      padding: 10px;
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      background-color: transparent;
-    }
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
     .navbox {
-      margin-top: 200px;
-      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: center;
-      img {
-        width: 150px;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-      }
-      ul{
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
+      // position: relative;
+      button.close {
+        width: 40px;
+        margin: 15px 15px 0 auto;
       }
     }
   }
-  .navbarhide {
-    left: -70%;
-    top: 0;
+  .hide-nav {
     left: -100%;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-}
-  .navbarshow {
-    top: 0;
+  }
+  .show-nav {
     left: 0;
-    transition: .7s;
-    -webkit-transition: .7s;
-    -moz-transition: .7s;
-    -ms-transition: .7s;
-    -o-transition: .7s;
-}
+  }
 }
