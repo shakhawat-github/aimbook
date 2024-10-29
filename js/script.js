@@ -51,6 +51,8 @@ const animation6 = loadLottieAnimation('lottie-animation-6', './json/mail.json')
 const animation7 = loadLottieAnimation('lottie-animation-7', './json/calendar.json');
 const animation8 = loadLottieAnimation('lottie-animation-8', './json/home.json');
 const animation9 = loadLottieAnimation('lottie-animation-9', './json/lock.json');
+const animation10 = loadLottieAnimation('lottie-animation-10', './json/register.json');
+const animation11 = loadLottieAnimation('lottie-animation-11', './json/team.json');
 // lottie animation end
 
 
@@ -81,11 +83,11 @@ passfinder.forEach((passfinder) => {
 // password show/hide end
 
 // hide join section start
-// const hidejoin = document.querySelector(".hidejoin");
-// const join = document.querySelector("#join");
-// hidejoin.addEventListener("click", () => {
-//   join.style.display = "none";
-// });
+const hidejoin = document.querySelector(".hidejoin");
+const join = document.querySelector("#join");
+hidejoin.addEventListener("click", () => {
+  join.style.display = "none";
+});
 // hide join section end
 
 

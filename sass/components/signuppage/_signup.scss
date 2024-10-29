@@ -1,4 +1,5 @@
 #signup {
+  margin-top: 20px;
   .signupbox {
     width: 50%;
     margin: 0 auto;
@@ -10,7 +11,7 @@
       width: 80%;
       .form-group {
         @include typebox;
-        input{
+        input {
           padding-left: 53px;
         }
         i {
@@ -20,10 +21,10 @@
           color: var(--deepwhite);
         }
         select {
-          background-color: var(--deepdark);
+          background-color: var(--bodybg);
+          border: 3px solid var(--bgtwo);
           width: 100%;
-          padding: 10px;
-          border: 3px solid var(--gray);
+          padding: 12px 10px 12px 53px;
           border-radius: 10px;
           -webkit-border-radius: 10px;
           -moz-border-radius: 10px;
@@ -44,6 +45,18 @@
         -o-border-radius: 20px;
         font-weight: 600;
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          width: 32px;
+        }
+      }
+      .newcreate {
+        text-align: center;
+        .haveacc {
+          color: var(--txtone);
+        }
       }
     }
   }

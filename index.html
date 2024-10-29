@@ -75,7 +75,14 @@
             <div class="loginbg">
               <form action="#">
                 <div class="logo"><img src="svg/logo.svg" alt="logo" /></div>
-                <h2>Welcome to Ochigram</h2>
+                <h2>
+                  <span>Welcome to</span>
+                  <svg viewBox="0 0 1320 300" class="brand">
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                      ochigram
+                    </text>
+                  </svg>	
+                </h2>
                 <p>You can log in or create a new account</p>
 
                 <div class="form-group">
@@ -85,10 +92,10 @@
                 </div>
 
                 <div class="form-group">
-                  <input type="password" name="password" class="password" required="required" id="loginpass"/>
+                  <input type="password" name="password" class="password" required="required" id="password1"/>
                   <div class="lottie"><span id="lottie-animation-2"></span></div>
                   <label for="password">Password</label>
-                  <i class="fa-regular fa-eye-slash passfinder"></i>
+                  <i class="fa-regular fa-eye-slash passfinder" data-password="password1"></i>
                 </div>
                 <button type="submit">Log in <span id="lottie-animation-3"></span></button>
                 <a href="lottie.html" class="forgot">Forgot password?</a>

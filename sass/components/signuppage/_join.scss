@@ -4,7 +4,7 @@
     margin: 0 auto;
     .join {
       margin: 0 auto;
-
+      width: 80%;
       .tab {
         h2 {
           font-size: 30px;
@@ -13,6 +13,9 @@
           font-weight: 700;
           display: flex;
           justify-content: space-between;
+          .brand{
+            @include brand;
+          }
         }
         img {
           border-radius: 20px;
@@ -26,7 +29,7 @@
         margin-top: 50px;
         p {
           font-size: 18px;
-          color: var(--deepwhite);
+          color: var(--txttwo);
           width: 70%;
           padding: 20px 0;
         }

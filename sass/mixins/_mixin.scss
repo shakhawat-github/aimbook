@@ -24,11 +24,46 @@
     height: 45px;
     width: 100%;
     background-color: var(--bodybg);
-    color: var(--deepwhite);
+    color: var(--txttwo);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+  }
+}
+@mixin brand($width: 25% , $color: $brand){
+  width: $width;
+  text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: $color;
+    font-size: 235px;
+    @keyframes stroke {
+      0% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: $color;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+      }
+      70% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: $color;
+      }
+      80% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: $color;
+        stroke-width: 3;
+      }
+      100% {
+        fill: $color;
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+      }
+    }
   }
 }

@@ -242,7 +242,7 @@ header .headbox select option {
   height: 45px;
   width: 100%;
   background-color: var(--bodybg);
-  color: var(--deepwhite);
+  color: var(--txttwo);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -322,6 +322,45 @@ header .headbox select option {
   font-size: 22px;
   font-weight: 600;
 }
+#login .loginbox h2 svg {
+  width: 25%;
+}
+#login .loginbox h2 svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: var(--txtone);
+  font-size: 235px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: var(--txtone);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: var(--txtone);
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: var(--txtone);
+    stroke-width: 3;
+  }
+  100% {
+    fill: var(--txtone);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+#login .loginbox h2 svg text {
+  stroke: var(--txtone);
+  fill: var(--txtone);
+}
 #login .loginbox p {
   color: var(--txtone);
   opacity: 0.7;
@@ -351,6 +390,7 @@ header .headbox select option {
 }
 #join .mainjoinbox .join {
   margin: 0 auto;
+  width: 80%;
 }
 #join .mainjoinbox .join .tab h2 {
   font-size: 30px;
@@ -359,6 +399,41 @@ header .headbox select option {
   font-weight: 700;
   display: flex;
   justify-content: space-between;
+}
+#join .mainjoinbox .join .tab h2 .brand {
+  width: 25%;
+}
+#join .mainjoinbox .join .tab h2 .brand text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #59a98b;
+  font-size: 235px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #59a98b;
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #59a98b;
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: #59a98b;
+    stroke-width: 3;
+  }
+  100% {
+    fill: #59a98b;
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
 }
 #join .mainjoinbox .join .tab img {
   border-radius: 20px;
@@ -372,11 +447,14 @@ header .headbox select option {
 }
 #join .mainjoinbox .join .joinimg p {
   font-size: 18px;
-  color: var(--deepwhite);
+  color: var(--txttwo);
   width: 70%;
   padding: 20px 0;
 }
 
+#signup {
+  margin-top: 20px;
+}
 #signup .signupbox {
   width: 50%;
   margin: 0 auto;
@@ -415,7 +493,7 @@ header .headbox select option {
   height: 45px;
   width: 100%;
   background-color: var(--bodybg);
-  color: var(--deepwhite);
+  color: var(--txttwo);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -432,10 +510,10 @@ header .headbox select option {
   color: var(--deepwhite);
 }
 #signup .signupbox form .form-group select {
-  background-color: var(--deepdark);
+  background-color: var(--bodybg);
+  border: 3px solid var(--bgtwo);
   width: 100%;
-  padding: 10px;
-  border: 3px solid var(--gray);
+  padding: 12px 10px 12px 53px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -455,10 +533,18 @@ header .headbox select option {
   -o-border-radius: 20px;
   font-weight: 600;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.signupfoot .haveacc {
-  margin-top: 20px;
+#signup .signupbox form button span {
+  width: 32px;
+}
+#signup .signupbox form .newcreate {
+  text-align: center;
+}
+#signup .signupbox form .newcreate .haveacc {
+  color: var(--txtone);
 }
 
 #homedead {

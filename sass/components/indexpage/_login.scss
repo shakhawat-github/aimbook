@@ -73,7 +73,7 @@
           align-items: center;
           justify-content: center;
           column-gap: 10px;
-          span{
+          span {
             display: inline-block;
             width: 35px;
           }
@@ -105,6 +105,13 @@
       color: var(--txtone);
       font-size: 22px;
       font-weight: 600;
+      svg {
+        @include brand($width: 25%, $color: var(--txtone));
+        text{
+          stroke: var(--txtone);
+          fill: var(--txtone);
+        }
+      }
     }
     p {
       color: var(--txtone);
