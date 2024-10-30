@@ -92,6 +92,26 @@ const animation19 = loadLottieAnimation(
   "lottie-animation-19",
   "./json/messenger.json"
 );
+const animation20 = loadLottieAnimation(
+  "lottie-animation-20",
+  "./json/notification.json"
+);
+const animation21 = loadLottieAnimation(
+  "lottie-animation-21",
+  "./json/team.json"
+);
+const animation22 = loadLottieAnimation(
+  "lottie-animation-22",
+  "./json/community.json"
+);
+const animation23 = loadLottieAnimation(
+  "lottie-animation-23",
+  "./json/note.json"
+);
+const animation24 = loadLottieAnimation(
+  "lottie-animation-24",
+  "./json/play.json"
+);
 // lottie animation end
 
 // theme start

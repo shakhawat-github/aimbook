@@ -699,17 +699,35 @@ button svg {
   color: var(--txttwo);
 }
 #homedead #navigation .navbox .navlist {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 20px;
   padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+#homedead #navigation .navbox .navlist li {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+#homedead #navigation .navbox .navlist li:hover {
+  background-color: var(--bgtwo);
 }
 #homedead #navigation .navbox .navlist li a {
   display: flex;
   align-items: center;
+  color: var(--txtone);
+  text-transform: capitalize;
 }
-#homedead #navigation .navbox .navlist li a .messenger {
+#homedead #navigation .navbox .navlist li a span:first-child {
   width: 30px;
+  margin-right: 10px;
+}
+#homedead #navigation .navbox .navlist li a span:last-child {
+  width: 100px;
 }
 #homedead .hide-nav {
   left: -100%;
