@@ -68,6 +68,30 @@ const animation13 = loadLottieAnimation(
   "lottie-animation-13",
   "./json/cross.json"
 );
+const animation14 = loadLottieAnimation(
+  "lottie-animation-14",
+  "./json/search.json"
+);
+const animation15 = loadLottieAnimation(
+  "lottie-animation-15",
+  "./json/filter.json"
+);
+const animation16 = loadLottieAnimation(
+  "lottie-animation-16",
+  "./json/contact.json"
+);
+const animation17 = loadLottieAnimation(
+  "lottie-animation-17",
+  "./json/home.json"
+);
+const animation18 = loadLottieAnimation(
+  "lottie-animation-18",
+  "./json/userprofile.json"
+);
+const animation19 = loadLottieAnimation(
+  "lottie-animation-19",
+  "./json/messenger.json"
+);
 // lottie animation end
 
 // theme start
@@ -130,4 +154,24 @@ navcloser.addEventListener('click' , ()=>{
   navigation.classList.add("hide-nav");
 })
 
+
+
+
+
+
+
+
+
+// search start
+let search = document.querySelector('#search');
+let main = document.querySelector('main')
+search.addEventListener('click' , ()=>{
+  search.classList.add('search-extend');
+})
+main.addEventListener('click' , ()=>{
+  search.classList.remove('search-extend');
+  
+})
+
+// search end
 // common script end

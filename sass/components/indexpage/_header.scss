@@ -1,4 +1,4 @@
-header{
+#indexheader{
     padding: 10px 0;
     background-color: var(--bodybg);
     .headbox{
@@ -14,9 +14,6 @@ header{
             color: var(--txtone);
             option{
                 background-color: var(--bodybg);
-                &:hover{
-                    // background-color: var(--bgtwo) !important;
-                }
             }
         }
     }

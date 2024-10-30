@@ -131,13 +131,6 @@ i {
   background-image: url("../../svg/calender.svg");
 }
 
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
-  display: none;
-}
-
 ::-moz-selection {
   background: #59a98b;
   color: var(--txtone);
@@ -156,27 +149,28 @@ button svg {
   fill: var(--iconcolor);
 }
 
-header {
+#indexheader {
   padding: 10px 0;
   background-color: var(--bodybg);
 }
-header .headbox {
+#indexheader .headbox {
   display: flex;
   justify-content: center;
   -moz-column-gap: 60%;
        column-gap: 60%;
   padding: 0 50px;
 }
-header .headbox select {
+#indexheader .headbox select {
   text-transform: capitalize;
   border: 0;
   background-color: transparent;
   padding: 5px 15px;
   color: var(--txtone);
 }
-header .headbox select option {
+#indexheader .headbox select option {
   background-color: var(--bodybg);
 }
+
 #login .loginbox {
   display: flex;
   flex-direction: column;
@@ -565,6 +559,7 @@ header .headbox select option {
 #homedead {
   background-color: var(--bodybg);
   overflow-x: hidden;
+  padding: 15px 0;
 }
 #homedead .headbox {
   display: grid;
@@ -615,28 +610,106 @@ header .headbox select option {
     stroke-width: 0;
   }
 }
+#homedead .headbox .headeritems {
+  display: flex;
+  justify-content: end;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+#homedead .headbox .headeritems form {
+  background-color: var(--bgtwo);
+  width: 50px;
+  position: relative;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#homedead .headbox .headeritems form button {
+  position: absolute;
+  width: 45px;
+  top: 0;
+  left: 5px;
+}
+#homedead .headbox .headeritems form input {
+  background-color: var(--bodybg);
+  height: 100%;
+  width: 100%;
+  padding: 0 10px 0 50px;
+}
+#homedead .headbox .headeritems .search-extend {
+  width: 60%;
+}
+#homedead .headbox .headeritems .search-extend input {
+  border: 2px solid var(--bgtwo);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 #homedead #navigation {
+  padding-bottom: 10px;
   width: 20%;
   height: 100vh;
   background-color: var(--bodybg);
   border-right: 1px solid var(--txtone);
   position: absolute;
   top: 0;
-  transition: 0.6s;
-  -webkit-transition: 0.6s;
-  -moz-transition: 0.6s;
-  -ms-transition: 0.6s;
-  -o-transition: 0.6s;
+  transition: 0.8s;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
 }
 #homedead #navigation .navbox {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
 }
 #homedead #navigation .navbox button.close {
   width: 40px;
   margin: 15px 15px 0 auto;
+}
+#homedead #navigation .navbox .profile {
+  margin-top: 10%;
+}
+#homedead #navigation .navbox .profile .image {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#homedead #navigation .navbox .profile .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+#homedead #navigation .navbox .profile .name {
+  margin-top: 20px;
+  color: var(--txttwo);
+}
+#homedead #navigation .navbox .navlist {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 50px 0;
+}
+#homedead #navigation .navbox .navlist li a {
+  display: flex;
+  align-items: center;
+}
+#homedead #navigation .navbox .navlist li a .messenger {
+  width: 30px;
 }
 #homedead .hide-nav {
   left: -100%;
