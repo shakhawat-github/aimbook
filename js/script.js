@@ -194,4 +194,12 @@ main.addEventListener('click' , ()=>{
 })
 
 // search end
+
+
+
+
+
+
+
+
 // common script end

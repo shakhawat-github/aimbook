@@ -558,8 +558,10 @@ button svg {
 
 #homedead {
   background-color: var(--bodybg);
-  overflow-x: hidden;
   padding: 15px 0;
+  position: relative;
+  grid-area: homedead;
+  border-bottom: 1px solid var(--txtone);
 }
 #homedead .headbox {
   display: grid;
@@ -649,35 +651,35 @@ button svg {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
-#homedead #navigation {
+
+#navigation {
+  overflow: hidden;
+  grid-area: nav;
   padding-bottom: 10px;
-  width: 20%;
   height: 100vh;
   background-color: var(--bodybg);
   border-right: 1px solid var(--txtone);
-  position: absolute;
-  top: 0;
-  transition: 0.8s;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -ms-transition: 0.8s;
-  -o-transition: 0.8s;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
 }
-#homedead #navigation .navbox {
+#navigation .navbox {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
 }
-#homedead #navigation .navbox button.close {
+#navigation .navbox button.close {
   width: 40px;
   margin: 15px 15px 0 auto;
 }
-#homedead #navigation .navbox .profile {
+#navigation .navbox .profile {
   margin-top: 10%;
 }
-#homedead #navigation .navbox .profile .image {
+#navigation .navbox .profile .image {
   overflow: hidden;
   width: 200px;
   height: 200px;
@@ -687,18 +689,18 @@ button svg {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#homedead #navigation .navbox .profile .image img {
+#navigation .navbox .profile .image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
 }
-#homedead #navigation .navbox .profile .name {
+#navigation .navbox .profile .name {
   margin-top: 20px;
   color: var(--txttwo);
 }
-#homedead #navigation .navbox .navlist {
+#navigation .navbox .navlist {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -708,30 +710,32 @@ button svg {
   position: relative;
   z-index: 1;
 }
-#homedead #navigation .navbox .navlist li {
+#navigation .navbox .navlist li {
   width: 70%;
   display: flex;
   justify-content: center;
 }
-#homedead #navigation .navbox .navlist li:hover {
+#navigation .navbox .navlist li:hover {
   background-color: var(--bgtwo);
 }
-#homedead #navigation .navbox .navlist li a {
+#navigation .navbox .navlist li a {
   display: flex;
   align-items: center;
   color: var(--txtone);
   text-transform: capitalize;
 }
-#homedead #navigation .navbox .navlist li a span:first-child {
+#navigation .navbox .navlist li a span:first-child {
   width: 30px;
   margin-right: 10px;
 }
-#homedead #navigation .navbox .navlist li a span:last-child {
+#navigation .navbox .navlist li a span:last-child {
   width: 100px;
 }
-#homedead .hide-nav {
-  left: -100%;
+
+.hide-nav {
+  width: 0;
 }
-#homedead .show-nav {
-  left: 0;
+
+.show-nav {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
