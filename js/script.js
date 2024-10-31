@@ -129,14 +129,14 @@ function changeTheme(theme, position) {
 // Function to load theme from localStorage
 function loadTheme() {
   const theme = localStorage.getItem("theme") || "white"; // Default theme is white
-  const position = localStorage.getItem("sliderPosition") || "5px"; // Default position for white theme
+  const position = localStorage.getItem("sliderPosition") || "2%"; // Default position for white theme
   changeTheme(theme, position);
 }
 
 // Set up event listeners for the buttons
-document.querySelector("#itemone").addEventListener("click", () => changeTheme("white", "5px"));
-document.querySelector("#itemtwo").addEventListener("click", () => changeTheme("dark", "129px"));
-document.querySelector("#itemthree").addEventListener("click", () => changeTheme("black", "239px"));
+document.querySelector("#itemone").addEventListener("click", () => changeTheme("white", "2%"));
+document.querySelector("#itemtwo").addEventListener("click", () => changeTheme("dark", "34%"));
+document.querySelector("#itemthree").addEventListener("click", () => changeTheme("black", "66%"));
 
 loadTheme();
 // theme end

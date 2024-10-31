@@ -13,6 +13,7 @@
     <link rel="icon" href="svg/logo.svg" />
     <!-- styles -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive/index.css" />
     <style>
       #loginpage {
         height: 100vh;
@@ -39,7 +40,11 @@
           </select>
           <div class="datatheme">
             <button type="button" class="item" id="itemone">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="themesvg">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 -960 960 960"
+                class="themesvg"
+              >
                 <path
                   d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm283-100q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-80q66 0 113-47t47-113q0-66-47-113t-113-47q-66 0-113 47t-47 113q0 66 47 113t113 47Zm0-160Z"
                 />
@@ -74,32 +79,51 @@
           <div class="loginbox">
             <div class="loginbg">
               <form action="#">
-                <div class="logo"><a href="home.html"><img src="svg/logo.svg" alt="logo" /></a></div>
+                <div class="logo">
+                  <a href="home.html"><img src="svg/logo.svg" alt="logo" /></a>
+                </div>
                 <h2>
                   <span>Welcome to</span>
                   <svg viewBox="0 0 1320 300" class="brand">
                     <text x="50%" y="50%" dy=".35em" text-anchor="middle">
                       ochigram
                     </text>
-                  </svg>	
+                  </svg>
                 </h2>
                 <p>You can log in or create a new account</p>
 
                 <div class="form-group">
                   <input type="text" name="username" required="required" />
-                  <div class="lottie"><span id="lottie-animation-1" class="lottieicon"></span></div>
+                  <div class="lottie">
+                    <span id="lottie-animation-1" class="lottieicon"></span>
+                  </div>
                   <label for="username">Username</label>
                 </div>
 
                 <div class="form-group">
-                  <input type="password" name="password" class="password" required="required" id="password1"/>
-                  <div class="lottie"><span id="lottie-animation-2" class="lottieicon"></span></div>
+                  <input
+                    type="password"
+                    name="password"
+                    class="password"
+                    required="required"
+                    id="password1"
+                  />
+                  <div class="lottie">
+                    <span id="lottie-animation-2" class="lottieicon"></span>
+                  </div>
                   <label for="password">Password</label>
-                  <i class="fa-regular fa-eye-slash passfinder" data-password="password1"></i>
+                  <i
+                    class="fa-regular fa-eye-slash passfinder"
+                    data-password="password1"
+                  ></i>
                 </div>
-                <button type="submit">Log in <span id="lottie-animation-3"></span></button>
+                <button type="submit">
+                  Log in <span id="lottie-animation-3"></span>
+                </button>
                 <a href="lottie.html" class="forgot">Forgot password?</a>
-                <a href="signup.html" class="createnewacc">Create new account</a >
+                <a href="signup.html" class="createnewacc"
+                  >Create new account</a
+                >
               </form>
             </div>
           </div>

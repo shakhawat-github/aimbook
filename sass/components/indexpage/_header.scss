@@ -1,20 +1,19 @@
-#indexheader{
-    padding: 10px 0;
-    background-color: var(--bodybg);
-    .headbox{
-        display: flex;
-        justify-content: center;
-        column-gap: 60%;
-        padding: 0 50px;
-        select{
-            text-transform: capitalize;
-            border: 0;
-            background-color: transparent;
-            padding: 5px 15px;
-            color: var(--txtone);
-            option{
-                background-color: var(--bodybg);
-            }
-        }
+#indexheader {
+  padding: 10px 0;
+  background-color: var(--bodybg);
+  .headbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    select {
+      text-transform: capitalize;
+      border: 0;
+      background-color: transparent;
+      padding: 5px 15px;
+      color: var(--txtone);
+      option {
+        background-color: var(--bodybg);
+      }
     }
+  }
 }

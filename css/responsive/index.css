@@ -1,0 +1,113 @@
+/* extra small device start */
+@media (max-width: 575.98px) {
+  /* header start */
+  .container {
+    padding: 0 5px;
+  }
+  button svg {
+    width: 18px;
+  }
+  .datatheme .themeslider {
+    top: 4px;
+    left: 5px;
+    width: 75px;
+    height: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #indexheader {
+    padding: 5px 0;
+  }
+  #indexheader .headbox {
+    padding: 0;
+  }
+  #indexheader .headbox select {
+    padding: 5px;
+  }
+  .datatheme {
+    padding: 5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  .datatheme button {
+    padding: 5px;
+  }
+  /* header end */
+  /* login start */
+  #login .loginbox .loginbg {
+    width: 90%;
+  }
+  #login .loginbox .loginbg form {
+    padding: 30px 0;
+    row-gap: 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+  #login .loginbox .logo img {
+    width: 80px;
+  }
+  #login .loginbox h2 {
+    font-size: 18px;
+    -moz-column-gap: 7px;
+    column-gap: 7px;
+  }
+  #login .loginbox h2 svg {
+    width: 25%;
+  }
+  #login .loginbox .loginbg form .form-group input {
+    border: 1px solid var(--bgtwo);
+    height: 38px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding-left: 37px;
+  }
+  #login .loginbox .loginbg form .form-group .lottie {
+    width: 34px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid var(--bgtwo);
+  }
+  #login .loginbox .loginbg form .form-group label {
+    position: absolute;
+    top: 10px;
+    left: 14%;
+    color: #999999;
+    font-size: 14px;
+    font-weight: normal;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    padding: 0 5px;
+  }
+  #login .loginbox .loginbg form button {
+    font-size: 14px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+  }
+  /* login end */
+  /* footer start */
+  #footer .copyright h6 {
+    font-size: 14px;
+  }
+  /* footer end */
+}
+/* extra small device end */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
