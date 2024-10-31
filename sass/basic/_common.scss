@@ -33,10 +33,9 @@ body {
 img {
   width: 100%;
 }
-i {
-  color: var(--txttwo);
-}
+
 :root {
+  --iconfill: #59a98b;
   --bodybg: #ffffff;
   --bgtwo: #d4d8dd;
   --loginbg: rgba(255, 255, 255, 0.4);
@@ -46,6 +45,7 @@ i {
 }
 
 .theme[data-theme="dark"] {
+  --iconfill: #d3d5db;
   --bodybg: #323339;
   --bgtwo: #222128;
   --txtone: #eeeeee;
@@ -53,6 +53,7 @@ i {
   --sliderbg: #494a50;
 }
 .theme[data-theme="black"] {
+  --iconfill: #d4d7e1;
   --bodybg: #1b1d23;
   --bgtwo: #000001;
   --txtone: #edeeef;
@@ -119,12 +120,6 @@ i {
 ::-webkit-calendar-picker-indicator {
   background-image: url("../../svg/calender.svg");
 }
-// input[type="search"]::-webkit-search-decoration,
-// input[type="search"]::-webkit-search-cancel-button,
-// input[type="search"]::-webkit-search-results-button,
-// input[type="search"]::-webkit-search-results-decoration {
-//   display: none;
-// }
 
 ::-moz-selection {
   background: $brand;
@@ -140,8 +135,12 @@ button {
   background-color: transparent;
   svg {
     width: 30px;
-    fill: var(--iconcolor);
   }
 }
 
-
+.lottieicon{
+  path{
+    stroke: var(--iconfill);
+    fill: var(--bodybg);
+  }
+}

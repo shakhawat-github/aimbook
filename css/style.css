@@ -39,11 +39,8 @@ img {
   width: 100%;
 }
 
-i {
-  color: var(--txttwo);
-}
-
 :root {
+  --iconfill: #59a98b;
   --bodybg: #ffffff;
   --bgtwo: #d4d8dd;
   --loginbg: rgba(255, 255, 255, 0.4);
@@ -53,6 +50,7 @@ i {
 }
 
 .theme[data-theme=dark] {
+  --iconfill: #d3d5db;
   --bodybg: #323339;
   --bgtwo: #222128;
   --txtone: #eeeeee;
@@ -61,6 +59,7 @@ i {
 }
 
 .theme[data-theme=black] {
+  --iconfill: #d4d7e1;
   --bodybg: #1b1d23;
   --bgtwo: #000001;
   --txtone: #edeeef;
@@ -146,7 +145,11 @@ button {
 }
 button svg {
   width: 30px;
-  fill: var(--iconcolor);
+}
+
+.lottieicon path {
+  stroke: var(--iconfill);
+  fill: var(--bodybg);
 }
 
 #indexheader {
@@ -249,7 +252,6 @@ button svg {
   top: 0;
   left: 0;
   width: 50px;
-  background-color: #ffffff;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   border: 3px solid var(--bgtwo);
@@ -407,6 +409,7 @@ button svg {
   stroke-width: 2;
   stroke: #59a98b;
   font-size: 235px;
+  font-weight: 900;
 }
 @keyframes stroke {
   0% {
@@ -526,7 +529,6 @@ button svg {
   left: 0;
   width: 50px;
   height: 45px;
-  background-color: #ffffff;
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   border: 3px solid var(--bgtwo);
@@ -586,6 +588,7 @@ button svg {
   stroke-width: 2;
   stroke: #59a98b;
   font-size: 235px;
+  font-weight: 900;
 }
 @keyframes stroke {
   0% {
@@ -653,6 +656,7 @@ button svg {
 }
 
 #navigation {
+  padding: 0 10px;
   overflow: hidden;
   grid-area: nav;
   padding-bottom: 10px;
@@ -733,9 +737,13 @@ button svg {
 }
 
 .hide-nav {
-  width: 0;
+  position: absolute;
+  top: 0;
+  left: -400px;
 }
 
 .show-nav {
-  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=style.css.map */
